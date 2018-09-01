@@ -1,0 +1,4 @@
+-----1 DATATYPES
+	- literals can have underscored for readability
+	- type=long literals should end with an 'l' or 'L' (long longValue = 100L);
+	- java converts expression results to int type
