@@ -6,5 +6,6 @@ public class Main {
 	byte firstByte = 1;
 	byte secondByte = 41;
 	byte newByte = (byte) (firstByte + secondByte);
+	System.out.println(newByte);
     }
 }
