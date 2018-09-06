@@ -1,0 +1,71 @@
+                                                                                 !INC Local Scripts.EAConstants-JScript
+
+/*
+ * Script Name: TBD
+ * Author: Roman Stubna
+ * Purpose: TBD
+ * Date: 2018-Sep-06
+ */
+
+function getSubPackages(package, collection) {
+	var subPackages = package.Packages;
+	var subPkgCount = subPackages.Count;
+	//Session.Prompt("current package: "+package.Name, promptOK);
+	if (subPkgCount != 0)
+	{
+		//Session.Prompt(subPkgCount+" - subpackage count", promptOK);
+		for (var i = 0; i < subPkgCount; i++)
+		{
+			getSubPackages(subPackages.getAt(i));
+		}
+	}
+
+	getPackageContents(package, collection);
+}
+
+function getPackageContents(package, collection) {
+	var element;
+	var countElements = 0;
+	var packageElements = package.Elements();
+	//Session.Prompt(package.Name()+" has count of elements: "+package.Elements().count(), promptOK);
+
+	for (var i = 0; i < package.Elements.count(); i++)
+	{
+		element = packageElements.getAt(i);
+		//Session.Prompt("in package: "+element.Name, promptOK);
+		updateElementWithTags(element);
+		//collection.push(element);
+	}
+}
+
+function updateElementWithTags(element) {
+	//Session.Prompt("In update: "+element.Name, promptOK);
+	var tag = element.TaggedValues().AddNew("sd", "qwe");
+	tag.Update();
+}
+
+function main()
+{
+
+	var selectedElement;
+	var allElements = [];
+
+	if ((Repository.getContextItemType() != otPackage) && (Repository.getContextItemType() != otElement))
+	{
+		Session.Prompt("Please select a package or element.", promptOK);
+	}
+
+	selectedElement = Repository.GetContextObject;
+
+	//Session.Prompt(selectedElement.Packages.Count, promptOK);
+
+	if (selectedElement.objectType == otPackage)
+	{
+		//Session.Prompt("is a package", promptOK);
+		getSubPackages(selectedElement, allElements);
+		//Session.Prompt(Repository.GetContextObject().Multiplicity);
+		Session.Prompt("Done.", promptOK);
+	}
+}
+
+main();
