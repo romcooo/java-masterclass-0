@@ -7,14 +7,14 @@
  * Date: 2018-Sep-06
  */
  
- //where in the string the type begins for genLink string
- var GENLINKS_CONST_TYPE_POSITION = 7;
+//where in the string the type begins for genLink string
+var GENLINKS_CONST_TYPE_POSITION = 7;
  
- //global variable to count elements updated by a single run of this script
- var countOfUpdatedElements = 0;
+//global variable to count elements updated by a single run of this script
+var countOfUpdatedElements = 0;
  
- //Input is package and the count so far (use 0 when invoking). Iterates through all subpackages and counts all elements recursively.
- function countPkgAndElementsRecursive(selectedPkg, count) {
+//Input is package and the count so far (use 0 when invoking). Iterates through all subpackages and counts all elements recursively.
+function countPkgAndElementsRecursive(selectedPkg, count) {
 	count = count + selectedPkg.Elements.count();
 	Session.Output("At package: "+selectedPkg.Name+" and count with elements of this package is: "+count);
 	var subPackages = selectedPkg.Packages;
@@ -24,7 +24,7 @@
 		}
 	}
 	return count;
- }
+}
  
 //iterates recursively through subpackages and finally invokes iteration through elements of input package
 function getSubPackages(package, collection) {
