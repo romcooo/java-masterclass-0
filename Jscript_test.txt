@@ -27,7 +27,7 @@ function countPkgAndElementsRecursive(selectedPkg, count) {
 }
  
 //iterates recursively through subpackages and finally invokes iteration through elements of input package
-function getSubPackages(package, collection) {
+function getSubPackages(package) {
 	var subPackages = package.Packages;
 	var subPkgCount = subPackages.Count;
 	//Session.Output("Current package: "+package.Name);
@@ -40,11 +40,11 @@ function getSubPackages(package, collection) {
 		}
 	}
 	
-	getPackageContents(package, collection);
+	getPackageContents(package);
 }
 
 //iterates through all elements in input package and performs updateElementWithTypeTag on them
-function getPackageContents(package, collection) {
+function getPackageContents(package) {
 	var element;
 	var packageElements = package.Elements();
 	//Session.Output(package.Name()+" has count of elements: "+package.Elements().count());
@@ -66,7 +66,7 @@ function updateElementWithTypeTag(element) {
 		typeValue = getTypeFromGenLinks(element);
 		tagExists = checkIfTagExistsByType(element, "type");
 		//only proceed if a filled tag of this type does not already exist
-		if (tagExists != 1) {
+		if (tagExists != 1 && typeValue != "") {
 			Session.Output("Stereotype of current element is XSDsimpleType and does not yet have a filled type tag, therefore proceeding with addition of tag: type = " + typeValue);
 			if (tagExists == 0) {
 				var tag = element.TaggedValues().AddNew("type", typeValue);
@@ -117,7 +117,6 @@ function performAllElementUpdates(element) {
 function main()
 {	
 	var selectedElement;
-	var allElements = [];
 	selectedElement = Repository.GetContextObject;
 	
 	//check if selected is an element or package
@@ -132,7 +131,7 @@ function main()
 		count = countPkgAndElementsRecursive(selectedElement, 0);
 		//if you select No, end script.
 		if (Session.Prompt("You are about to run a script on "+count+" elements (only some of which might be updated). Proceed?", promptYESNO) != 3) return -1;
-		getSubPackages(selectedElement, allElements);
+		getSubPackages(selectedElement);
 	} else if (Repository.GetContextItemType() == otElement) {
 		if (Session.Prompt("You are about to run a script on a single element (it might be updated). Proceed?", promptYESNO) != 3) return -1;
 		performAllElementUpdates(selectedElement);
