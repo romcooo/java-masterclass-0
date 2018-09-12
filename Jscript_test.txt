@@ -52,7 +52,7 @@ function getPackageContents(package, collection) {
 	for (var i = 0; i < packageElements.count(); i++)
 	{
 		element = packageElements.getAt(i);
-		updateElementWithTypeTag(element);
+		performAllElementUpdates(element);
 	}
 }
 
@@ -72,7 +72,7 @@ function updateElementWithTypeTag(element) {
 				var tag = element.TaggedValues().AddNew("type", typeValue);
 				tag.Update();
 			} else {
-				var tag = element.taggedValues().GetByName("type");
+				var tag = element.TaggedValues().GetByName("type");
 				tag.Value = typeValue;
 				tag.Update();
 			}
@@ -105,6 +105,15 @@ function checkIfTagExistsByType(element, type) {
 	return returnVal;
 }
 
+/*
+This function does all the updates to a given element and should always be used wherever youre updating an element (whether during iteration or not).
+Used mostly so this scipt can be reused for multiple things - simply write a new function with whatever update you want to do and add it here.
+*/
+function performAllElementUpdates(element) {
+	updateElementWithTypeTag(element);
+	return 0;
+}
+
 function main()
 {	
 	var selectedElement;
@@ -126,7 +135,7 @@ function main()
 		getSubPackages(selectedElement, allElements);
 	} else if (Repository.GetContextItemType() == otElement) {
 		if (Session.Prompt("You are about to run a script on a single element (it might be updated). Proceed?", promptYESNO) != 3) return -1;
-		updateElementWithTypeTag(selectedElement);
+		performAllElementUpdates(selectedElement);
 	}
 	
 	Session.Prompt("Done. Updated "+countOfUpdatedElements+" elements.", promptOK);
