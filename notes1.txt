@@ -1,13 +1,17 @@
 -----1 DATATYPES
-	- literals can have underscored for readability
+	- literals can have underscores for readability
 	- type=long literals should end with an 'l' or 'L' (long longValue = 100L);
 	- java converts expression results to int type (no need to recast long though) - when assigning, recast using:
 		- byte newByte = (byte) (byte1 + byte2);
 	- float literals end with 'f' (or 'F') and doubles with d.
 		- eg. float myFloat
 		- double myDouble = 5d;
-	- java automatically asumes that decimals are doubles (float myFloat = 5.4 -> error (5.4 is a double)
+	- java automatically assumes that decimals are doubles (float myFloat = 5.4 -> error (5.4 is a double)
 	- double is faster than float on modern machines + math functions use it more often -> use doubles instead of floats for calculations.
 	- assign unicode characters to char: char myChar = '\u00A9';
 		
-	
+-----2 OPERATORS
+	- % = mod
+	- int += 2 -> int = int + 2;
+	- java operator precedence: http://cs.bilkent.edu.tr/~guvenir/courses/CS101/op_precedence.html
+	-  
