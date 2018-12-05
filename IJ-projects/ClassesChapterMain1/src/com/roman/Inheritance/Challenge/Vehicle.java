@@ -1,20 +1,24 @@
 package com.roman.Inheritance.Challenge;
 
+import com.roman.Inheritance.Challenge.PhysicsCalculator.Physics;
+
 public class Vehicle {
     private int weight;
     private int speed;
     private int horizontalDirection; //0 is north, 90 is east, 180 is south, 270 is west etc.
     private int maxSpeed;
+    private double vehiclePower;
 
     public Vehicle() {
-        this(100, 0, 150);
+        this(100, 0, 150, 80d);
         System.out.print("Default values used.");
     }
 
-    public Vehicle(final int weight, final int speed, final int maxSpeed) {
+    public Vehicle(final int weight, final int speed, final int maxSpeed, final double vehiclePower) {
         this.weight = weight;
         this.speed = speed;
         this.maxSpeed = maxSpeed;
+        this.vehiclePower = vehiclePower;
         System.out.println("Vehicle constructed.");
     }
 
@@ -32,6 +36,14 @@ public class Vehicle {
 
     public void setSpeed(final int speed) {
         this.speed = speed;
+    }
+
+    public double getVehiclePower() {
+        return vehiclePower;
+    }
+
+    public void setVehiclePower(final double vehiclePower) {
+        this.vehiclePower = vehiclePower;
     }
 
     public void horizontalTurn(String direction, int degrees) {
@@ -55,12 +67,13 @@ public class Vehicle {
 
     public void speedUp(int kmh) {
         if (speed + kmh <= maxSpeed) {
+            double duration = Physics.calculateAccelerationDuration(weight, speed, speed+kmh, vehiclePower);
             speed += kmh;
-            double duration = ( (double) weight/40000 )*( ((double) kmh*(double)kmh)/55);
             System.out.println("Speed increased to " + speed + " in " + duration + " seconds");
         } else {
+            double duration = Physics.calculateAccelerationDuration(weight, speed, speed+kmh, vehiclePower);
             speed = maxSpeed;
-            System.out.println("Max speed reached while speeding up, speed is " + speed);
+            System.out.println("Max speed reached while speeding up, speed is " + speed + " reached in " + duration + " seconds");
         }
     }
 
