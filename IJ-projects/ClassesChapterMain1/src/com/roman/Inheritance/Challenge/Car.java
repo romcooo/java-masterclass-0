@@ -28,7 +28,7 @@ public class Car extends Vehicle {
         this.currentGear = currentGear;
         this.isAutomatic = isAutomatic;
         this.numberOfGears = numberOfGears;
-        System.out.println("Car constructed");
+        System.out.println("Motherboard constructed");
     }
 
     public int getNumberOfWheels() {
