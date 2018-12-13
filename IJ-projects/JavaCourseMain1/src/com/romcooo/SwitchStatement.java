@@ -16,6 +16,5 @@ public class SwitchStatement {
         }
         System.out.println("asdw");
         String asd = "Asd";
-        asd.to
     }
 }
