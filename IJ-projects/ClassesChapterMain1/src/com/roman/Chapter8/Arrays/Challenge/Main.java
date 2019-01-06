@@ -1,4 +1,4 @@
-package com.roman.Chapter8.Arrays.Challenge;
+package com.roman.Chapter8.arrays.challenge;
 
 
 import java.util.Arrays;
