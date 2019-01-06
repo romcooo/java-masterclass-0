@@ -18,6 +18,3 @@
 	
 -----3 CONTROL FLOW STATEMENTS
 	- Switch: you can use case 1:case 2: case 3: in order to have a single 'case' for 1, 2 and 3;
-	
------4 CLASSES
-	-  
