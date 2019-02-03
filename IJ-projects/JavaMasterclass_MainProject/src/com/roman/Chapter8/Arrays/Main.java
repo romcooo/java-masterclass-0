@@ -1,4 +1,4 @@
-package com.roman.Chapter8.Arrays;
+package com.roman.Chapter8.arrays;
 
 import java.util.Scanner;
 
