@@ -1,6 +1,4 @@
-package com.roman.Chapter8.ArrayList;
-
-import java.util.ArrayList;
+package com.roman.Chapter8.ArrayLists.LessonNotes;
 
 public class Main {
 
