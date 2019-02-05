@@ -1,4 +1,4 @@
-package com.roman.Chapter8.ArrayList;
+package com.roman.Chapter8.ArrayLists.LessonNotes;
 
 import java.util.ArrayList;
 
