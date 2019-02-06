@@ -1,5 +1,7 @@
 package com.roman.Chapter8.ArrayLists.Challenge;
 
+import com.sun.istack.internal.NotNull;
+
 public class Contact {
     private String phoneNumber;
     private String name;
@@ -24,5 +26,9 @@ public class Contact {
 
     public void setName(final String name) {
         this.name = name;
+    }
+
+    public static Contact createContact(String name, String phoneNumber) {
+        return new Contact(name, phoneNumber);
     }
 }

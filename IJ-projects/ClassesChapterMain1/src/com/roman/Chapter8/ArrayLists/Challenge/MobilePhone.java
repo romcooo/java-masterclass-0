@@ -8,34 +8,40 @@ public class MobilePhone {
 
     public MobilePhone(final String phoneName) {
         this.phoneName = phoneName;
-        this.contacts = new ArrayList<Contact>();
+        this.contacts = new ArrayList<>();
     }
 
 
-    public void addContact(String name, String phoneNumber) {
+    public boolean addContact(String name, String phoneNumber) {
         if (getIndexByName(name) < 0 && getIndexByPhoneNumber(phoneNumber) < 0) {
             this.contacts.add(new Contact(name, phoneNumber));
             System.out.println("Contact added.");
+            return true;
         } else {
             System.out.println("Contact with this name or number already exists.");
+            return false;
         }
     }
 
-    public void removeContact(String name) {
+    public boolean removeContact(String name) {
         if (getIndexByName(name) >= 0) {
             Contact removedItem = this.contacts.remove(getIndexByName(name));
             System.out.println(removedItem.getName() + " was removed from the list.");
+            return true;
         } else {
             System.out.println("No contact with name "+name+" exists.");
+            return false;
         }
     }
 
-    public void modifyContact(String name, String phoneNumber) {
+    public boolean modifyContact(String name, String phoneNumber) {
         if (getIndexByName(name) >= 0) {
             this.contacts.get(getIndexByName(name)).setPhoneNumber(phoneNumber);
             System.out.println(name + " had phone number updated to " + phoneNumber);
+            return true;
         } else {
             System.out.println("No contact with name "+name+" exists.");
+            return false;
         }
     }
 
@@ -46,17 +52,48 @@ public class MobilePhone {
         }
     }
 
-    public void findContact(String property) {
+    public Contact findContact(String property) {
         if (getIndexByName(property) >= 0) {
-            Contact found = this.contacts.get(getIndexByName(property));
-            System.out.println("Found by name: "+ found.getName() + " - " + found.getPhoneNumber());
-            return;
+            Contact foundContact = this.contacts.get(getIndexByName(property));
+            System.out.println("Found by name: "+ foundContact.getName() + " - " + foundContact.getPhoneNumber());
+            return foundContact;
         } else if (getIndexByPhoneNumber(property) >= 0) {
-            Contact found = this.contacts.get(getIndexByPhoneNumber(property));
-            System.out.println("Found by phone number: "+ found.getName() + " - " + found.getPhoneNumber());
-            return;
+            Contact foundContact = this.contacts.get(getIndexByPhoneNumber(property));
+            System.out.println("Found by phone number: "+ foundContact.getName() + " - " + foundContact.getPhoneNumber());
+            return foundContact;
         } else {
             System.out.println("No contact with such name nor number exists.");
+            return null;
+        }
+    }
+
+    public String findContactName(String property) {
+        if (getIndexByName(property) >= 0) {
+            Contact foundContact = this.contacts.get(getIndexByName(property));
+            System.out.println("Found by name: "+ foundContact.getName() + " - " + foundContact.getPhoneNumber());
+            return foundContact.getName();
+        } else if (getIndexByPhoneNumber(property) >= 0) {
+            Contact foundContact = this.contacts.get(getIndexByPhoneNumber(property));
+            System.out.println("Found by phone number: "+ foundContact.getName() + " - " + foundContact.getPhoneNumber());
+            return foundContact.getName();
+        } else {
+            System.out.println("No contact with such name nor number exists.");
+            return null;
+        }
+    }
+
+    public String findContactNumber(String property) {
+        if (getIndexByName(property) >= 0) {
+            Contact foundContact = this.contacts.get(getIndexByName(property));
+            System.out.println("Found by name: "+ foundContact.getName() + " - " + foundContact.getPhoneNumber());
+            return foundContact.getPhoneNumber();
+        } else if (getIndexByPhoneNumber(property) >= 0) {
+            Contact foundContact = this.contacts.get(getIndexByPhoneNumber(property));
+            System.out.println("Found by phone number: "+ foundContact.getName() + " - " + foundContact.getPhoneNumber());
+            return foundContact.getPhoneNumber();
+        } else {
+            System.out.println("No contact with such name nor number exists.");
+            return null;
         }
     }
 
