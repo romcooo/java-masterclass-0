@@ -9,8 +9,11 @@ import java.util.Scanner;
 public class Playlist {
     private static String
             INSTRUCTION_INPUT_1 = "Choose an option: ",
-            PLAYLIST_EMPTY = "Playlist is empty, nothing to play.",
-            NOW_PLAYING = "Now playing: ";
+            PLAYLIST_EMPTY = "Playlist is empty, nothing to play. Exiting playlist.",
+            NOW_PLAYING = "Now playing: ",
+            LAST_SONG = "There's only one song left in the playlist. Playing it now.",
+            REPLAYING_CURRENT = "Replaying current song, now playing: ",
+            TECHNICAL_ERROR = "Unfortunately, an internal error happened.";
 
     private LinkedList<Song> playlist;
     private ArrayList<Album> ownedAlbums;
@@ -79,46 +82,107 @@ public class Playlist {
                     printInstructions();
                     break;
                 case 1:
-                    if (!directionForward && playlistIterator.hasNext()) {
-                        playlistIterator.next();
-                        directionForward = true;
-                    }
-                    if (playlistIterator.hasNext()) {
-                        System.out.println("Skipping forward, now playing: " + playlistIterator.next().getTitleAndDurationString() );
+                    if (this.playlist.size() == 1) {
+                        System.out.println(LAST_SONG);
+                        if (playlistIterator.hasNext()) {
+                            System.out.println(NOW_PLAYING + playlistIterator.next().getTitleAndDurationString());
+                            directionForward = true;
+                        } else if (playlistIterator.hasPrevious()) {
+                            System.out.println(NOW_PLAYING + playlistIterator.previous().getTitleAndDurationString());
+                            directionForward = false;
+                        } else {
+                            System.out.println(TECHNICAL_ERROR);
+                        }
+                        break;
                     } else {
-                        System.out.println("Cannot skip forward, currently at last song.");
+                        if (!directionForward) {
+                            playlistIterator.next();
+                            directionForward = true;
+                        }
+                        if (playlistIterator.hasNext()) {
+                            System.out.println("Skipping forward, now playing: " + playlistIterator.next().getTitleAndDurationString());
+                        } else {
+                            System.out.println("Cannot skip forward, currently at last song.");
+                        }
                     }
                     break;
                 case 2:
-                    if (directionForward && playlistIterator.hasPrevious()) {
-                        playlistIterator.previous();
-                        directionForward = false;
-                    }
-                    if (playlistIterator.hasPrevious()) {
-                        System.out.println("Skipping backward, now playing: " + playlistIterator.previous().getTitleAndDurationString() );
+                    if (this.playlist.size() == 1) {
+                        System.out.println(LAST_SONG);
+                        if (playlistIterator.hasNext()) {
+                            System.out.println(NOW_PLAYING + playlistIterator.next().getTitleAndDurationString());
+                            directionForward = true;
+                        } else if (playlistIterator.hasPrevious()) {
+                            System.out.println(NOW_PLAYING + playlistIterator.previous().getTitleAndDurationString());
+                            directionForward = false;
+                        } else {
+                            System.out.println(TECHNICAL_ERROR);
+                        }
+                        break;
                     } else {
-                        System.out.println("Cannot skip backward, currently at first song.");
+                        if (directionForward) {
+                            playlistIterator.previous();
+                            directionForward = false;
+                        }
+                        if (playlistIterator.hasPrevious()) {
+                            System.out.println("Skipping backward, now playing: " + playlistIterator.previous().getTitleAndDurationString());
+                        } else {
+                            System.out.println("Cannot skip backward, currently at first song.");
+                        }
                     }
                     break;
                 case 3:
-                    if (directionForward && playlistIterator.hasPrevious()) {
-                        playlistIterator.previous();
-                        System.out.println("Replaying current song: " + playlistIterator.next().getTitleAndDurationString() );
-                        directionForward = true;
+                    if (this.playlist.size() == 1) {
+                        System.out.println(LAST_SONG);
+                        if (playlistIterator.hasNext()) {
+                            System.out.println(NOW_PLAYING + playlistIterator.next().getTitleAndDurationString());
+                            directionForward = true;
+                        } else if (playlistIterator.hasPrevious()) {
+                            System.out.println(NOW_PLAYING + playlistIterator.previous().getTitleAndDurationString());
+                            directionForward = false;
+                        } else {
+                            System.out.println(TECHNICAL_ERROR);
+                        }
+                        break;
+                    } else {
+                        if (directionForward) {
+                            System.out.println(REPLAYING_CURRENT + playlistIterator.previous().getTitleAndDurationString());
+                            playlistIterator.next();
+                        } else {
+                            System.out.println(REPLAYING_CURRENT + playlistIterator.next().getTitleAndDurationString());
+                            playlistIterator.previous();
+                        }
                     }
-
                     break;
                 case 4:
                     printPlaylist(true);
                     break;
                 case 5:
-                    if(directionForward && playlistIterator.hasPrevious()) {
-                        playlistIterator.previous();
-                        System.out.println("Removing current song: " + playlistIterator.next().getTitleAndDurationString() + ", now playing: " + playlistIterator.next().getTitleAndDurationString() );
+                    System.out.println("Removing current song from the playlist.");
+                    playlistIterator.remove();
+
+                    if (this.playlist.isEmpty()) {
+                        System.out.println(PLAYLIST_EMPTY);
+                        programRunning = false;
+                        break;
                     } else {
-                        System.out.println("Removing the last song in the playlist.");
-                        playlistIterator.remove();
+                        if (directionForward) {
+                            if (playlistIterator.hasNext()) {
+                                System.out.println(NOW_PLAYING + playlistIterator.next().getTitleAndDurationString());
+                            } else {
+                                System.out.println(NOW_PLAYING + playlistIterator.previous().getTitleAndDurationString());
+                                directionForward = false;
+                            }
+                        } else { //note: this is if (!directionForward)
+                            if (playlistIterator.hasNext()) {
+                                System.out.println(NOW_PLAYING + playlistIterator.next().getTitleAndDurationString());
+                                directionForward = true;
+                            } else {
+                                System.out.println(NOW_PLAYING + playlistIterator.previous().getTitleAndDurationString());
+                            }
+                        }
                     }
+
                     break;
                 case 9:
                     programRunning = false;
