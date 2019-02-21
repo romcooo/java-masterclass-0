@@ -8,12 +8,12 @@ import java.util.Scanner;
 
 public class Playlist {
     private static String
-            INSTRUCTION_INPUT_1 = "Choose an option: ",
-            PLAYLIST_EMPTY = "Playlist is empty, nothing to play. Exiting playlist.",
-            NOW_PLAYING = "Now playing: ",
-            LAST_SONG = "There's only one song left in the playlist. Playing it now.",
-            REPLAYING_CURRENT = "Replaying current song, now playing: ",
-            TECHNICAL_ERROR = "Unfortunately, an internal error happened.";
+        INSTRUCTION_INPUT_1 = "Choose an option: ",
+        PLAYLIST_EMPTY = "Playlist is empty, nothing to play. Exiting playlist.",
+        NOW_PLAYING = "Now playing: ",
+        LAST_SONG = "There's only one song left in the playlist. Playing it now.",
+        REPLAYING_CURRENT = "Replaying current song, now playing: ",
+        TECHNICAL_ERROR = "Unfortunately, an internal error happened.";
 
     private LinkedList<Song> playlist;
     private ArrayList<Album> ownedAlbums;
