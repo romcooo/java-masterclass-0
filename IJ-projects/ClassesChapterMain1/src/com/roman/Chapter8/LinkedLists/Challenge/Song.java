@@ -12,12 +12,12 @@ public class Song {
     }
 
     public Song(final String title, final String durationString) {
-        if (!durationString.matches("\\d+:\\d+")) {
+        if (!PlaylistFormatter.isDurationStringValid(durationString)) {
             System.out.println("Album - Invalid song duration format.");
             throw new IllegalArgumentException();
         } else {
             this.title = title;
-            this.duration = getDurationFromString(durationString);
+            this.duration = PlaylistFormatter.getDuration(durationString);
         }
     }
 
@@ -25,21 +25,16 @@ public class Song {
         return title;
     }
 
+    public String getTitleAndDurationString() {
+        return this.title + ",  " + this.getDurationString();
+    }
+
     public Duration getDuration() {
         return duration;
     }
 
     public String getDurationString() {
-        long minutes = this.duration.toMinutes();
-        long seconds = this.duration.minusMinutes(minutes).toMillis()/1000;
-        return minutes + ":" + seconds;
-    }
-
-    private Duration getDurationFromString(String durationString) {
-        String[] values = durationString.split(":");
-        Duration duration = Duration.ofMinutes(Integer.parseInt(values[0]))
-                                    .plusSeconds(Integer.parseInt(values[1]));
-        return duration;
+        return PlaylistFormatter.getDurationString(this.duration);
     }
 
     public Song createSong(String title, Duration duration) {

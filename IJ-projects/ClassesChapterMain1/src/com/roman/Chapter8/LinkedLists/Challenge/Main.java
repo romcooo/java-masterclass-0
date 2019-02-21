@@ -17,5 +17,7 @@ public class Main {
         play.addSong("Thunderstruck");
         play.addSong("Back in Black");
         play.printPlaylist(true);
+
+        play.play();
     }
 }
