@@ -1,15 +1,22 @@
 package com.roman.Chapter9.AbstractClasses.Challenge;
 
+import java.util.LinkedList;
+
 public class Main {
     public static void main(String[] args) {
-        Node myList = new Node(new String("a"));
-        System.out.println("first item: " + myList.getValue().toString());
-        myList.add(new String("b"));
+        System.out.println("==================");
+        String string1 = "A 1st string";
+        String string2 = "B 2nd string";
+        String string3 = "E 3rd string";
+        String string4 = "G 4th string";
+        String string5 = "D 5th string";
 
-        myList = myList.next();
-
-        myList.add(new String("a"));
-        System.out.println(myList.getValue().toString());
+        MyLinkedList myNewList = new MyLinkedList();
+        myNewList.add(string1);
+        myNewList.add(string2);
+        myNewList.add(string3);
+        myNewList.add(string4);
+        myNewList.add(string5);
 
     }
 }

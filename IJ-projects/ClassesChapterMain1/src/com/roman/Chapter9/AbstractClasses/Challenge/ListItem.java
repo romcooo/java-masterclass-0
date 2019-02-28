@@ -50,6 +50,10 @@ public abstract class ListItem {
     public abstract ListItem next();
     public abstract ListItem previous();
     public abstract int compareTo(Object object);
-    public abstract ListItem add(Object toAdd);
-    public abstract boolean remove(Object toRemove);
+//    public abstract ListItem add(Object toAdd);
+//    public abstract boolean remove(Object toRemove);
+    public abstract void setItemAsPrevious(ListItem itemToAddAsPrevious);
+    public abstract void setItemAsNext(ListItem itemToAddAsNext);
+    public abstract boolean remove();
+
 }
