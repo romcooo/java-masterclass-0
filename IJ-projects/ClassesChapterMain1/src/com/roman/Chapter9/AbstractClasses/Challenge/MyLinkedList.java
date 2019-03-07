@@ -31,10 +31,13 @@ public class MyLinkedList {
         boolean atEnd = false;
         boolean atStart = false;
 
+        System.out.println("Entering addItem with: " + toAdd.toString());
+
         if (this.first == null) {
             this.first = newItem;
             this.last = newItem;
-            System.out.println("Adding the first item to the list: " + newItem.getValue().toString());
+            System.out.println("Adding the first item to the list.");
+            System.out.println("Added " + newItem.getValue().toString());
             this.size++;
             return newItem;
         }
@@ -69,12 +72,13 @@ public class MyLinkedList {
             } else if (currentNode.compareTo(newItem.getValue()) > 0) { //so the added item should go before
                 if (atStart || (currentNode.getPrevious().compareTo(newItem.getValue()) < 0)) {
                     currentNode.setItemAsPrevious(newItem);
-                    System.out.println("Adding item: " + newItem.getValue().toString() + " as previous to " + currentNode.getValue().toString());                } else {
-                    currentNode = currentNode.previous();
+                    System.out.println("Adding item: " + newItem.getValue().toString() + " as previous to " + currentNode.getValue().toString());
                     if (atStart) {
                         this.first = newItem;
                     }
                     break;
+                } else {
+                    currentNode = currentNode.previous();
                 }
             }
         }
@@ -84,25 +88,58 @@ public class MyLinkedList {
     }
 
     public ListItem remove(Object toRemove) {
-        if (this.size == 0) {
+        System.out.println("Entering remove with toRemove: " + toRemove.toString() + " and size: " + this.size);
+
+        if (this.size == 0 && this.first == null && this.last == null) {
             System.out.println("List is empty, cannot remove item.");
+            return null;
         }
+
         ListItem currentNode = this.getFirst();
         boolean atEnd = false;
 
         while(!atEnd) {
             if (!currentNode.hasNext()) {
+                System.out.println("Now at end of list with value: " + currentNode.getValue().toString());
                 atEnd = true;
             }
+
             if (currentNode.compareTo(toRemove) == 0) {
-                if (this.first == currentNode) {
-                    if (currentNode.hasNext()) {
-                        currentNode.getNext().setPrevious(null);
-                    }
+                ListItem nodeToReturn;
+
+                if (this.size == 1) { //is the last item
+                    this.first = null;
+                    this.last = null;
+                    System.out.println("List is now empty.");
+                    nodeToReturn = null;
+                } else if (this.first.compareTo(toRemove) == 0) { //is first but not last
+                    this.first = currentNode.getNext();
+                    nodeToReturn = currentNode.getNext();
+                    currentNode.remove();
+                } else if (this.last.compareTo(toRemove) == 0) {
+                this.last = currentNode.getPrevious();
+                nodeToReturn = currentNode.getPrevious();
+                currentNode.remove();
+                } else {
+                    nodeToReturn = currentNode.getNext();
+                    currentNode.remove();
+                }
+                this.size -= 1;
+                System.out.println("Removing "+toRemove.toString()+", list now has size: " + this.size);
+
+                if (nodeToReturn != null) {
+                    System.out.println("Returning node: "+nodeToReturn.getValue().toString());
+                } else {
+                    System.out.println("Not returning any node, last item was just removed.");
                 }
 
+                return nodeToReturn;
+            } else {
+                System.out.println("Current node not equal, proceeding to next. Current/toRemove: " + currentNode.getValue().toString() + "/" + toRemove.toString());
+                currentNode = currentNode.next();
             }
         }
+        System.out.println("No item removed from the list due to no match, input: " + toRemove.toString());
         return null;
     }
 
