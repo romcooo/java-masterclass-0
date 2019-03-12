@@ -35,6 +35,36 @@ public class Main {
 
         myNewList.remove(string6); //toto nema ist
 
+        System.out.println("=================BINARY SEARCH TREE=============");
 
+        BinarySearchTree tree = new BinarySearchTree();
+        String longString1 = "F, A, C, B, E, G, W";
+        addSetToList(longString1, tree);
+
+        /* TREE:
+                        F
+             A                    G
+                  C                        W
+                B   E
+        */
+
+        tree.printPathToItem("C");
+        tree.printPathToItem("B");
+        tree.printPathToItem("E");
+        tree.printPathToItem("W");
+        tree.printPathToItem("F");
+
+        System.out.println("=========");
+        tree.printOrdered();
+
+        tree.remove("C");
+        tree.printOrdered();
+    }
+
+    private static void addSetToList(String comaSeparatedStrings, MyListInterface list) {
+        String[] values = comaSeparatedStrings.split(",");
+        for (String value:values) {
+            list.add(value.trim());
+        }
     }
 }

@@ -1,6 +1,6 @@
 package com.roman.Chapter9.AbstractClasses.Challenge;
 
-public class MyLinkedList {
+public class MyLinkedList implements MyListInterface {
     private ListItem first, last;
     private int size;
 
@@ -14,7 +14,7 @@ public class MyLinkedList {
         this.first = first;
     }
 
-    public ListItem getFirst() {
+    public ListItem getRoot() {
         return first;
     }
 
@@ -42,7 +42,7 @@ public class MyLinkedList {
             return newItem;
         }
 
-        ListItem currentNode = this.getFirst();
+        ListItem currentNode = this.getRoot();
         while(!atEnd) {
             System.out.println("Entering loop with currentNode = " + currentNode.getValue().toString());
             if (currentNode.compareTo(newItem.getValue()) == 0) {
@@ -50,35 +50,35 @@ public class MyLinkedList {
                 break;
             }
 
-            if (!currentNode.hasNext()) {
+            if (!currentNode.hasRight()) {
                 atEnd = true;
             }
 
-            if (!currentNode.hasPrevious()) {
+            if (!currentNode.hasLeft()) {
                 atStart = true;
             }
 
             if (currentNode.compareTo(newItem.getValue()) < 0) { //so the added item should go after
-                if (atEnd || (currentNode.getNext().compareTo(newItem.getValue()) > 0)) {
-                    currentNode.setItemAsNext(newItem);
-                    System.out.println("Adding item: " + newItem.getValue().toString() + " as next to " + currentNode.getValue().toString());
+                if (atEnd || (currentNode.getRight().compareTo(newItem.getValue()) > 0)) {
+                    currentNode.setItemAsRight(newItem);
+                    System.out.println("Adding item: " + newItem.getValue().toString() + " as right to " + currentNode.getValue().toString());
                     if (atEnd) {
                         this.last = newItem;
                     }
                     break;
                 } else {
-                    currentNode = currentNode.next();
+                    currentNode = currentNode.right();
                 }
             } else if (currentNode.compareTo(newItem.getValue()) > 0) { //so the added item should go before
-                if (atStart || (currentNode.getPrevious().compareTo(newItem.getValue()) < 0)) {
-                    currentNode.setItemAsPrevious(newItem);
-                    System.out.println("Adding item: " + newItem.getValue().toString() + " as previous to " + currentNode.getValue().toString());
+                if (atStart || (currentNode.getLeft().compareTo(newItem.getValue()) < 0)) {
+                    currentNode.setItemAsLeft(newItem);
+                    System.out.println("Adding item: " + newItem.getValue().toString() + " as left to " + currentNode.getValue().toString());
                     if (atStart) {
                         this.first = newItem;
                     }
                     break;
                 } else {
-                    currentNode = currentNode.previous();
+                    currentNode = currentNode.left();
                 }
             }
         }
@@ -95,11 +95,11 @@ public class MyLinkedList {
             return null;
         }
 
-        ListItem currentNode = this.getFirst();
+        ListItem currentNode = this.getRoot();
         boolean atEnd = false;
 
         while(!atEnd) {
-            if (!currentNode.hasNext()) {
+            if (!currentNode.hasRight()) {
                 System.out.println("Now at end of list with value: " + currentNode.getValue().toString());
                 atEnd = true;
             }
@@ -113,15 +113,15 @@ public class MyLinkedList {
                     System.out.println("List is now empty.");
                     nodeToReturn = null;
                 } else if (this.first.compareTo(toRemove) == 0) { //is first but not last
-                    this.first = currentNode.getNext();
-                    nodeToReturn = currentNode.getNext();
+                    this.first = currentNode.getRight();
+                    nodeToReturn = currentNode.getRight();
                     currentNode.remove();
                 } else if (this.last.compareTo(toRemove) == 0) {
-                this.last = currentNode.getPrevious();
-                nodeToReturn = currentNode.getPrevious();
+                this.last = currentNode.getLeft();
+                nodeToReturn = currentNode.getLeft();
                 currentNode.remove();
                 } else {
-                    nodeToReturn = currentNode.getNext();
+                    nodeToReturn = currentNode.getRight();
                     currentNode.remove();
                 }
                 this.size -= 1;
@@ -135,8 +135,8 @@ public class MyLinkedList {
 
                 return nodeToReturn;
             } else {
-                System.out.println("Current node not equal, proceeding to next. Current/toRemove: " + currentNode.getValue().toString() + "/" + toRemove.toString());
-                currentNode = currentNode.next();
+                System.out.println("Current node not equal, proceeding to right. Current/toRemove: " + currentNode.getValue().toString() + "/" + toRemove.toString());
+                currentNode = currentNode.right();
             }
         }
         System.out.println("No item removed from the list due to no match, input: " + toRemove.toString());

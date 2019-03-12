@@ -1,59 +1,59 @@
 package com.roman.Chapter9.AbstractClasses.Challenge;
 
 public abstract class ListItem {
-    private ListItem previous;
-    private ListItem next;
+    private ListItem left;
+    private ListItem right;
     private Object value;
 
     public ListItem(final Object value) {
         this(null, null, value);
     }
 
-    public ListItem(final ListItem previous, final ListItem next, final Object value) {
-        this.previous = previous;
-        this.next = next;
+    public ListItem(final ListItem left, final ListItem right, final Object value) {
+        this.left = left;
+        this.right = right;
         this.value = value;
     }
 
-    public ListItem getPrevious() {
-        return previous;
+    public ListItem getLeft() {
+        return left;
     }
 
-    public ListItem getNext() {
-        return next;
+    public ListItem getRight() {
+        return right;
     }
 
     public Object getValue() {
         return value;
     }
 
-    public void setPrevious(final ListItem previous) {
-        this.previous = previous;
+    public void setLeft(final ListItem left) {
+        this.left = left;
     }
 
-    public void setNext(final ListItem next) {
-        this.next = next;
+    public void setRight(final ListItem right) {
+        this.right = right;
     }
 
     public void setValue(final Object value) {
         this.value = value;
     }
 
-    public boolean hasNext() {
-        return (this.next != null);
+    public boolean hasRight() {
+        return (this.right != null);
     }
 
-    public boolean hasPrevious() {
-        return (this.previous != null);
+    public boolean hasLeft() {
+        return (this.left != null);
     }
 
-    public abstract ListItem next();
-    public abstract ListItem previous();
+    public abstract ListItem right();
+    public abstract ListItem left();
     public abstract int compareTo(Object object);
 //    public abstract ListItem add(Object toAdd);
 //    public abstract boolean remove(Object toRemove);
-    public abstract void setItemAsPrevious(ListItem itemToAddAsPrevious);
-    public abstract void setItemAsNext(ListItem itemToAddAsNext);
+    public abstract void setItemAsLeft(ListItem itemToSetAsLeft);
+    public abstract void setItemAsRight(ListItem itemToSetAsRight);
     public abstract boolean remove();
 
 }

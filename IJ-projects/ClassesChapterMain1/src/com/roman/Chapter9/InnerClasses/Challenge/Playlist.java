@@ -214,8 +214,8 @@ public class Playlist {
 
     private void printInstructions() {
         System.out.println("0 - Show Instructions;\n"
-                + "1 - Skip to next song;\n"
-                + "2 - Replay previous song;\n"
+                + "1 - Skip to right song;\n"
+                + "2 - Replay left song;\n"
                 + "3 - Replay current song;\n"
                 + "4 - List songs in the playlist;\n"
                 + "5 - Remove current song;"
