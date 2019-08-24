@@ -1,7 +1,5 @@
 package com.roman.chapter11.scope;
 
-import sun.reflect.generics.scope.Scope;
-
 public class ScopeCheck {
     public int publicVar = 0;
     private int privateVar = 1;
