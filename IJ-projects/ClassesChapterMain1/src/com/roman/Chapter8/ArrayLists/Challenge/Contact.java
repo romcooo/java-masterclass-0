@@ -1,7 +1,5 @@
 package com.roman.Chapter8.ArrayLists.Challenge;
 
-import com.sun.istack.internal.NotNull;
-
 public class Contact {
     private String phoneNumber;
     private String name;
