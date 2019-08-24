@@ -1,64 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23ed5d5d-6f82-4c2d-89f6-7d9d0e0bde4a" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
+    <list default="true" id="23ed5d5d-6f82-4c2d-89f6-7d9d0e0bde4a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../ClassesChapterMain1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassesChapterMain1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaCourseMain1/com/romcooo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaCourseMain1/com/romcooo/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaCourseMain1/com/romcooo/ReadingUserInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaCourseMain1/com/romcooo/ReadingUserInput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/romcooo/ReadingUserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/romcooo/ReadingUserInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMasterclass_MainProject/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMasterclass_MainProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Chapter8/Arrays/Challenge/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Chapter8/Arrays/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Classes/BankAccount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Classes/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Classes/VipCustomer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Composition/Case.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Composition/Challenge/Area.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Composition/Challenge/Chair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Composition/Challenge/Door.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Composition/Challenge/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Composition/Challenge/Room.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Composition/Challenge/Table.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Composition/Dimensions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Composition/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Composition/Monitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Composition/Motherboard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Composition/PC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Composition/Resolution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Encapsulation/Challenge/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Encapsulation/Challenge/Printer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Encapsulation/Challenge/Toner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Encapsulation/EnhancedPlayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Encapsulation/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Encapsulation/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Inheritance/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Inheritance/Challenge/BMW540.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Inheritance/Challenge/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Inheritance/Challenge/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Inheritance/Challenge/PhysicsCalculator/Physics.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Inheritance/Challenge/Vehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Inheritance/Dog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Inheritance/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/OopMaster/Challenge/BurgerAddition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/OopMaster/Challenge/DeluxeBurger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/OopMaster/Challenge/Hamburger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/OopMaster/Challenge/HealthyBurger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/OopMaster/Challenge/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/OopMaster/Challenge/Test/DeluxeBurger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/OopMaster/Challenge/Test/HealthyTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/OopMaster/Challenge/Test/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/OopMaster/Challenge/Test/TestBurger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Polymorphism/Challenge/BMW540V8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Polymorphism/Challenge/BMW550V12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Polymorphism/Challenge/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Polymorphism/Challenge/Engine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Polymorphism/Challenge/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Polymorphism/Challenge/MercedesS500.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Polymorphism/Forgettable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Polymorphism/IndependenceDay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Polymorphism/Jaws.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Polymorphism/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Polymorphism/MazeRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Polymorphism/Movie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Polymorphism/StarWars.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/src/com/roman/Chapter8/Arrays/Challenge/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMasterclass_MainProject/src/com/roman/Chapter8/Arrays/Challenge/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/src/com/roman/Chapter8/Arrays/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMasterclass_MainProject/src/com/roman/Chapter8/Arrays/Main.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="493046288">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="JavaCourseMain1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaCourseMain1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaCourseMain1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaCourseMain1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaCourseMain1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaCourseMain1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="romcooo" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-    </panes>
+  <component name="ProjectId" id="1Ps0dxmZNvAUXiAtbo2UAEoqEXY" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Java_masterclass_universal" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -71,6 +96,40 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="Application.ReadingUserInput">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.romcooo.Main" />
+      <module name="JavaCourseMain1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.romcooo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadingUserInput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.romcooo.ReadingUserInput" />
+      <module name="JavaCourseMain1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.romcooo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ReadingUserInput" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -85,38 +144,17 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

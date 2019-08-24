@@ -1,7 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d2bf265-d390-4181-ad2d-0732cd4d7a47" name="Default" comment="" />
+    <list default="true" id="4d2bf265-d390-4181-ad2d-0732cd4d7a47" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaCourseMain1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCourseMain1/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaCourseMain1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCourseMain1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaCourseMain1/out/production/JavaCourseMain1/com/romcooo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCourseMain1/out/production/JavaCourseMain1/com/romcooo/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaCourseMain1/out/production/JavaCourseMain1/com/romcooo/ReadingUserInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCourseMain1/out/production/JavaCourseMain1/com/romcooo/ReadingUserInput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaCourseMain1/src/com/romcooo/ReadingUserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCourseMain1/src/com/romcooo/ReadingUserInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMasterclass_MainProject/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaMasterclass_MainProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Chapter8/Arrays/Challenge/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Chapter8/Arrays/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Classes/BankAccount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Classes/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Classes/VipCustomer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Composition/Case.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Composition/Challenge/Area.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Composition/Challenge/Chair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Composition/Challenge/Door.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Composition/Challenge/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Composition/Challenge/Room.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Composition/Challenge/Table.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Composition/Dimensions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Composition/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Composition/Monitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Composition/Motherboard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Composition/PC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Composition/Resolution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Encapsulation/Challenge/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Encapsulation/Challenge/Printer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Encapsulation/Challenge/Toner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Encapsulation/EnhancedPlayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Encapsulation/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Encapsulation/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Inheritance/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Inheritance/Challenge/BMW540.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Inheritance/Challenge/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Inheritance/Challenge/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Inheritance/Challenge/PhysicsCalculator/Physics.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Inheritance/Challenge/Vehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Inheritance/Dog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Inheritance/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/OopMaster/Challenge/BurgerAddition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/OopMaster/Challenge/DeluxeBurger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/OopMaster/Challenge/Hamburger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/OopMaster/Challenge/HealthyBurger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/OopMaster/Challenge/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/OopMaster/Challenge/Test/DeluxeBurger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/OopMaster/Challenge/Test/HealthyTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/OopMaster/Challenge/Test/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/OopMaster/Challenge/Test/TestBurger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Polymorphism/Challenge/BMW540V8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Polymorphism/Challenge/BMW550V12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Polymorphism/Challenge/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Polymorphism/Challenge/Engine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Polymorphism/Challenge/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Polymorphism/Challenge/MercedesS500.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Polymorphism/Forgettable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Polymorphism/IndependenceDay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Polymorphism/Jaws.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Polymorphism/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Polymorphism/MazeRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Polymorphism/Movie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaMasterclass_MainProject/out/production/ClassesChapterMain1/com/roman/Polymorphism/StarWars.class" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,17 +95,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="526" />
-    <option name="y" value="-8" />
-    <option name="width" value="960" />
-    <option name="height" value="1040" />
-  </component>
   <component name="ProjectId" id="1Pryt3tfO6bxgxIGsFS1WDgsfTQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value=";&#9;null&#9;null" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaMasterclass_MainProject" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="editor.breadcrumbs" />
   </component>
@@ -180,7 +238,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

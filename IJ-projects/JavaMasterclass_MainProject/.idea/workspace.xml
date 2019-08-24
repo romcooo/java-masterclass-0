@@ -1,95 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="180deb0f-b3fb-48dc-81be-269f9ecaa343" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
+    <list default="true" id="180deb0f-b3fb-48dc-81be-269f9ecaa343" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../ClassesChapterMain1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassesChapterMain1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaCourseMain1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCourseMain1/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaCourseMain1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCourseMain1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaCourseMain1/out/production/JavaCourseMain1/com/romcooo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCourseMain1/out/production/JavaCourseMain1/com/romcooo/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaCourseMain1/out/production/JavaCourseMain1/com/romcooo/ReadingUserInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCourseMain1/out/production/JavaCourseMain1/com/romcooo/ReadingUserInput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaCourseMain1/src/com/romcooo/ReadingUserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCourseMain1/src/com/romcooo/ReadingUserInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Chapter8/Arrays/Challenge/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Chapter8/Arrays/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Classes/BankAccount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Classes/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Classes/VipCustomer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Composition/Case.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Composition/Challenge/Area.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Composition/Challenge/Chair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Composition/Challenge/Door.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Composition/Challenge/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Composition/Challenge/Room.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Composition/Challenge/Table.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Composition/Dimensions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Composition/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Composition/Monitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Composition/Motherboard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Composition/PC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Composition/Resolution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Encapsulation/Challenge/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Encapsulation/Challenge/Printer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Encapsulation/Challenge/Toner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Encapsulation/EnhancedPlayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Encapsulation/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Encapsulation/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Inheritance/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Inheritance/Challenge/BMW540.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Inheritance/Challenge/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Inheritance/Challenge/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Inheritance/Challenge/PhysicsCalculator/Physics.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Inheritance/Challenge/Vehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Inheritance/Dog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Inheritance/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/OopMaster/Challenge/BurgerAddition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/OopMaster/Challenge/DeluxeBurger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/OopMaster/Challenge/Hamburger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/OopMaster/Challenge/HealthyBurger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/OopMaster/Challenge/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/OopMaster/Challenge/Test/DeluxeBurger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/OopMaster/Challenge/Test/HealthyTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/OopMaster/Challenge/Test/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/OopMaster/Challenge/Test/TestBurger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Polymorphism/Challenge/BMW540V8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Polymorphism/Challenge/BMW550V12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Polymorphism/Challenge/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Polymorphism/Challenge/Engine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Polymorphism/Challenge/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Polymorphism/Challenge/MercedesS500.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Polymorphism/Forgettable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Polymorphism/IndependenceDay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Polymorphism/Jaws.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Polymorphism/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Polymorphism/MazeRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Polymorphism/Movie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ClassesChapterMain1/com/roman/Polymorphism/StarWars.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/roman/Chapter8/Arrays/Challenge/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/roman/Chapter8/Arrays/Challenge/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/roman/Chapter8/Arrays/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/roman/Chapter8/Arrays/Main.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1977362203">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="3" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="49814953">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="23" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="23" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/roman/Chapter8/Arrays/Challenge/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-894">
-              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/roman/Chapters6and7OOP/Classes/BankAccount.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/roman/Chapter8/Arrays/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/roman/Chapter8/ArrayList/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -101,89 +84,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/com/roman/Chapter8/ArrayList/Main.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1025" />
-    <option name="width" value="902" />
-    <option name="height" value="1047" />
-  </component>
+  <component name="ProjectId" id="1Ps0y5mO2pTDBsU39DeQIHuNWzP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <hideEmptyPackages ProjectPane="false" />
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="JavaMasterclass_MainProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaMasterclass_MainProject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaMasterclass_MainProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaMasterclass_MainProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaMasterclass_MainProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaMasterclass_MainProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaMasterclass_MainProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaMasterclass_MainProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="roman" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaMasterclass_MainProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaMasterclass_MainProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="roman" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter8" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaMasterclass_MainProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaMasterclass_MainProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="roman" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter8" type="462c0819:PsiDirectoryNode" />
-              <item name="Arrays" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaMasterclass_MainProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaMasterclass_MainProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="roman" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter8" type="462c0819:PsiDirectoryNode" />
-              <item name="Arrays" type="462c0819:PsiDirectoryNode" />
-              <item name="Challenge" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549193550732" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaCourseMain1" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -210,69 +116,17 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="1025" y="0" width="902" height="1047" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31235155" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Learn" order="6" />
-      <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-    </layout>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/roman/Chapters6and7OOP/Classes/BankAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/roman/Chapter8/Arrays/Challenge/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-894">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/roman/Chapter8/Arrays/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/roman/Chapter8/ArrayList/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
