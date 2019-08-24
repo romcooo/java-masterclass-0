@@ -23,13 +23,12 @@ public class MobilePhone {
         }
     }
 
-    public boolean removeContact(String name) {
-        if (getIndexByName(name) >= 0) {
-            Contact removedItem = this.contacts.remove(getIndexByName(name));
-            System.out.println(removedItem.getName() + " was removed from the list.");
+    public boolean removeContact(String property) {
+        if (this.contacts.remove(findContact(property))) {
+            System.out.println(property + " was removed from the contact list.");
             return true;
         } else {
-            System.out.println("No contact with name "+name+" exists.");
+            System.out.println("Cannot delete contact.");
             return false;
         }
     }
