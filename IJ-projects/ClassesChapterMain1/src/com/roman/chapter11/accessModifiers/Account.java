@@ -10,7 +10,7 @@ public class Account {
 
     public Account(String accountName) {
         this.accountName = accountName;
-        this.transactions = new ArrayList<Integer>();
+        this.transactions = new ArrayList<>();
     }
 
     public int getBalance() {
