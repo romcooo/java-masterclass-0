@@ -1,20 +1,44 @@
-package com.roman.chapter12.collectionsOverview;
+package com.roman.chapter12.comparableAndComparator;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class Theatre {
     private final String theatreName;
     private List<Seat> seats = new ArrayList<>();
 
+    static final Comparator<Seat> PRICE_ORDER = new Comparator<Seat>() {
+        @Override
+        public int compare(final Seat seat1, final Seat seat2) {
+            if (seat1.getPrice() < seat2.getPrice()) {
+                return -1;
+            } else if (seat1.getPrice() > seat2.getPrice()) {
+                return 1;
+            } else {
+                return 0;
+            }
+        }
+    };
+
     public Theatre(String theatreName, int numRows, int seatsPerRow) {
         this.theatreName = theatreName;
 
         int lastRow = 'A' + (numRows -1);
+        double price = 12.00d;
         for (char row = 'A'; row <= lastRow; row++) {
+            double rowDiscount = 0d;
+            if (row >= (lastRow-1)) {
+                rowDiscount = 2d;
+            }
             for (int seatNum = 1; seatNum <= seatsPerRow; seatNum++) {
-                this.seats.add(new Seat((row+String.format("%02d", seatNum))));
+                double centerPremium = 0d;
+                if (seatNum >= seatsPerRow/2 - 2 && seatNum <= seatsPerRow/2 + 2) {
+                    centerPremium = 3d;
+                }
+                this.seats.add(new Seat((row+String.format("%02d", seatNum)), price-rowDiscount+centerPremium));
             }
         }
     }
@@ -37,15 +61,22 @@ public class Theatre {
     }
 
     public List<Seat> getSeats() {
-        return seats;
+        return this.seats;
     }
 
     public class Seat implements Comparable<Seat> {
         private final String seatNumber;
+        private double price;
         private boolean reserved = false;
 
-        public Seat(String seatNumber) {
+        public Seat(String seatNumber, double price) {
             this.seatNumber = seatNumber;
+            this.price = price;
+        }
+
+        Seat(String seatNumber) {
+            this.seatNumber = seatNumber;
+            this.price = 0d;
         }
 
         public boolean reserve() {
@@ -123,7 +154,12 @@ public class Theatre {
             }
             return this.seatNumber;
         }
+
+        public double getPrice() {
+            return price;
+        }
     }
+
 
 }
 
