@@ -8,8 +8,6 @@ public class Main {
     private static Map<Integer, Location> locations = new HashMap<>();
     private static Map<String, String> directionMap = new HashMap<>();
 
-
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -21,29 +19,37 @@ public class Main {
         directionMap.put("W", "W");
         directionMap.put("S", "S");
         directionMap.put("E", "E");
+        directionMap.put("Q", "Q");
+        directionMap.put("QUIT", "Q");
+        Map<String, Integer> tempExit = new HashMap<>();
 
-        locations.put(0, new Location("You're sitting in front of a computer.", 0));
+        locations.put(0, new Location("You're sitting in front of a computer.", 0, tempExit));
 
-        locations.put(1, new Location("You're standing on a road.", 1));
-        locations.put(2, new Location("You're standing in a hill.", 2));
-        locations.put(3, new Location("You're standing in a building.", 3));
-        locations.put(4, new Location("You're standing in a valley.", 4));
-        locations.put(5, new Location("You're standing in a forest.", 5));
+        tempExit.put("W", 2);
+        tempExit.put("E", 3);
+        tempExit.put("S", 4);
+        tempExit.put("N", 6);
+        locations.put(1, new Location("You're standing on a road.", 1, tempExit));
 
-        locations.get(1).addExit("W", 2);
-        locations.get(1).addExit("E", 3);
-        locations.get(1).addExit("S", 4);
-        locations.get(1).addExit("N", 5);
+        tempExit = new HashMap<>();
+        tempExit.put("N", 5);
+        locations.put(2, new Location("You're standing in a hill.", 2, tempExit));
 
-        locations.get(2).addExit("N", 5);
+        tempExit = new HashMap<>();
+        tempExit.put("W", 1);
+        locations.put(3, new Location("You're standing in a building.", 3, tempExit));
 
-        locations.get(3).addExit("W", 1);
+        tempExit = new HashMap<>();
+        tempExit.put("N", 1);
+        tempExit.put("W", 2);
+        locations.put(4, new Location("You're standing in a valley.", 4, tempExit));
 
-        locations.get(4).addExit("N", 1);
-        locations.get(4).addExit("W", 2);
+        tempExit = new HashMap<>();
+        tempExit.put("S", 1);
+        tempExit.put("W", 2);
+        locations.put(5, new Location("You're standing in a forest.", 5, tempExit));
 
-        locations.get(5).addExit("S", 1);
-        locations.get(5).addExit("W", 2);
+        locations.put(6, new Location("crash!", 6, null));
 
         int loc = 1;
         while(true) {
@@ -64,16 +70,16 @@ public class Main {
             String[] words = direction.split(" ");
 
             for (String word : words) {
-                if (direction.toUpperCase().equals("Q")) {
-                    loc = 0;
-                    break;
-                }
 
                 word = word.toUpperCase();
                 if (directionMap.containsKey(word)) {
                     word = directionMap.get(word);
                     if (exits.containsKey(word)) {
                         loc = exits.get(word);
+                        break;
+                    }
+                    if (direction.toUpperCase().equals("Q")) {
+                        loc = 0;
                         break;
                     }
                 }
