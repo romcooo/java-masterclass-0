@@ -9,25 +9,32 @@ public abstract class HeavenlyBody {
     private final String name;
     private final double orbitalPeriod;
     private final Set<HeavenlyBody> satellites;
-    private final String bodyType;
+    private final BodyTypes bodyType;
+    public enum BodyTypes{
+        STAR,
+        PLANET,
+        MOON,
+        UNKNOWN
+    }
 
 
-    public HeavenlyBody(final String name, final double orbitalPeriod, final String bodyType) {
+    public HeavenlyBody(final String name, final double orbitalPeriod, final BodyTypes bodyType) {
         this.name = name;
         this.orbitalPeriod = orbitalPeriod;
         this.satellites = new HashSet<>();
-        if (Objects.equals(bodyType, "PLANET")
-                || Objects.equals(bodyType, "MOON")
-                || Objects.equals(bodyType, "STAR")
-                || Objects.equals(bodyType, "UNKNOWN")) {
-            this.bodyType = bodyType;
-        } else {
-            this.bodyType = "UNKNOWN";
-        }
+        this.bodyType = bodyType;
     }
 
     public String getName() {
         return name;
+    }
+
+    public BodyTypes getBodyType() {
+        return this.bodyType;
+    }
+
+    public String getTypeAndName() {
+        return this.bodyType + ": " + this.name;
     }
 
     public double getOrbitalPeriod() {
@@ -38,7 +45,7 @@ public abstract class HeavenlyBody {
         return new HashSet<>(this.satellites);
     }
 
-    public boolean addMoon(HeavenlyBody moon) {
+    public boolean addSatellite(HeavenlyBody moon) {
         return this.satellites.add(moon);
     }
 
@@ -50,6 +57,13 @@ public abstract class HeavenlyBody {
 
         if ((obj == null) || obj.getClass() != this.getClass()) {
             return false;
+        }
+
+        if (obj instanceof HeavenlyBody) {
+            HeavenlyBody theObject = (HeavenlyBody) obj;
+            if (this.name.equals(((HeavenlyBody) obj).getName())) {
+                return this.bodyType == theObject.getBodyType();
+            }
         }
 
         String objName = ((HeavenlyBody) obj).getName();
@@ -93,6 +107,6 @@ public abstract class HeavenlyBody {
      */
     @Override
     public int hashCode() {
-        return this.name.hashCode() + 57;
+        return this.name.hashCode() + 57 + this.bodyType.hashCode();
     }
 }

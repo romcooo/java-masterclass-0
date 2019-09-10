@@ -12,20 +12,20 @@ public class SetChallenge {
 
     public static void main(String[] args) {
         HeavenlyBody temp = new Planet("Mercury", 88d);
-        solarSystem.put(temp.getName(), temp);
+        solarSystem.put(temp.getTypeAndName(), temp);
         planets.add(temp);
 
         temp = new Planet("Venus", 225d);
-        solarSystem.put(temp.getName(), temp);
+        solarSystem.put(temp.getTypeAndName(), temp);
         planets.add(temp);
 
         temp = new Planet("Earth", 365d);
-        solarSystem.put(temp.getName(), temp);
+        solarSystem.put(temp.getTypeAndName(), temp);
         planets.add(temp);
 
         HeavenlyBody tempMoon = new Moon("Moon",  27);
-        solarSystem.put(tempMoon.getName(), tempMoon);
-        temp.addMoon(tempMoon);
+        solarSystem.put(temp.getTypeAndName(), tempMoon);
+        temp.addSatellite(tempMoon);
 
         System.out.println("Planets:");
         for(HeavenlyBody planet : planets) {
@@ -33,7 +33,7 @@ public class SetChallenge {
         }
 
         System.out.println("Moons of Earth");
-        for(HeavenlyBody moon : solarSystem.get("Earth").getSatellites() ) {
+        for(HeavenlyBody moon : solarSystem.get("PLANET: Earth").getSatellites() ) {
             System.out.println(moon.getName());
         }
 
@@ -46,6 +46,11 @@ public class SetChallenge {
         for (HeavenlyBody moon : moons) {
             System.out.println(moon.getName());
         }
+
+        HeavenlyBody planet1 = new Planet("Jupiter", 400d);
+        HeavenlyBody moon1 = new Planet("Jupiter", 30d);
+
+        System.out.println(planet1.equals(moon1));
 
     }
 
