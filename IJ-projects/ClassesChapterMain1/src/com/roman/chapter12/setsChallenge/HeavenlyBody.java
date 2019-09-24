@@ -37,6 +37,10 @@ public abstract class HeavenlyBody {
         return this.bodyType + ": " + this.name;
     }
 
+    public String getProperties() {
+        return this.getTypeAndName() + ", period: " + this.orbitalPeriod;
+    }
+
     public double getOrbitalPeriod() {
         return orbitalPeriod;
     }
@@ -109,4 +113,5 @@ public abstract class HeavenlyBody {
     public int hashCode() {
         return this.name.hashCode() + 57 + this.bodyType.hashCode();
     }
+
 }

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ClassesChapterMain1.iml" filepath="$PROJECT_DIR$/ClassesChapterMain1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaFX/javaFX.iml" filepath="$PROJECT_DIR$/javaFX/javaFX.iml" />
     </modules>
   </component>
 </project>

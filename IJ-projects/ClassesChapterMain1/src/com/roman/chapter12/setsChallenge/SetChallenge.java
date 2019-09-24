@@ -24,34 +24,56 @@ public class SetChallenge {
         planets.add(temp);
 
         HeavenlyBody tempMoon = new Moon("Moon",  27);
-        solarSystem.put(temp.getTypeAndName(), tempMoon);
+        solarSystem.put(tempMoon.getTypeAndName(), tempMoon);
         temp.addSatellite(tempMoon);
+
+
+        HeavenlyBody planet1 = new Planet("Jupiter", 400d);
+        HeavenlyBody moon1 = new Moon("Jupiter", 30d);
+
+
+        //2
+        System.out.println(planet1.equals(moon1));
+        System.out.println(moon1.equals(planet1));
+
+        System.out.println(planet1.equals(new Planet("Jupiter", 300d)));
 
         System.out.println("Planets:");
         for(HeavenlyBody planet : planets) {
-            System.out.println("\t" + planet.getName());
+            System.out.println("\t" + planet.getProperties());
         }
 
-        System.out.println("Moons of Earth");
-        for(HeavenlyBody moon : solarSystem.get("PLANET: Earth").getSatellites() ) {
-            System.out.println(moon.getName());
+        System.out.println("Solar System:");
+        for(HeavenlyBody heavenlyBody : solarSystem.values()) {
+            System.out.println("\t" + heavenlyBody.getProperties());
         }
 
-        Set<HeavenlyBody> moons = new HashSet<>();
-        for (HeavenlyBody planet : planets) {
-            moons.addAll(planet.getSatellites());
+        //3 & 4
+        temp = new Planet("Earth", 600d);
+        System.out.println("Adding duplicate to a Map: " + solarSystem.put(temp.getTypeAndName(), temp));
+        System.out.println("Adding duplicate to a Set: " + planets.add(temp));
+
+        System.out.println("Planets:");
+        for(HeavenlyBody planet : planets) {
+            System.out.println("\t" + planet.getProperties());
+        }
+        System.out.println("Solar System:");
+        for(HeavenlyBody heavenlyBody : solarSystem.values()) {
+            System.out.println("\t" + heavenlyBody.getProperties());
         }
 
-        System.out.println("All moons:");
-        for (HeavenlyBody moon : moons) {
-            System.out.println(moon.getName());
+        temp = new Star("Earth", 10000d);
+        System.out.println("Adding a same name but different type to a Map: " + solarSystem.put(temp.getTypeAndName(), temp));
+        System.out.println("Adding a same name but different type to a Set: " + planets.add(temp));
+
+        System.out.println("Planets:");
+        for(HeavenlyBody planet : planets) {
+            System.out.println("\t" + planet.getProperties());
         }
-
-        HeavenlyBody planet1 = new Planet("Jupiter", 400d);
-        HeavenlyBody moon1 = new Planet("Jupiter", 30d);
-
-        System.out.println(planet1.equals(moon1));
-
+        System.out.println("Solar System:");
+        for(HeavenlyBody heavenlyBody : solarSystem.values()) {
+            System.out.println("\t" + heavenlyBody.getProperties());
+        }
     }
 
     private class SolarSystem {
