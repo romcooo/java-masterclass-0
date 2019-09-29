@@ -1,6 +1,5 @@
 package com.roman.chapter11.accessModifiers;
 
-import javax.swing.*;
 import java.util.ArrayList;
 
 public class Account {
