@@ -128,13 +128,6 @@ public class MainChallenge {
         return 0;
     }
 
-    public static int checkout(Basket basket) {
-        for (Map.Entry<StockItem, Integer> item : basket.Items().entrySet()) {
-
-        }
-        return 0;
-    }
-
     public static int sellItem(Basket basket, String item, int quantity) {
         // retrieve the item from the stock list
         StockItem stockItem = stockList.get(item);
