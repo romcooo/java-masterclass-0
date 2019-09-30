@@ -1,5 +1,7 @@
 package com.roman.chapter12.sortedAndFurther;
 
+import java.util.Map;
+
 public class Main {
     private static StockList stockList = new StockList();
 
@@ -47,6 +49,8 @@ public class Main {
         sellItem(rBasket, "car", 1);
         System.out.println(rBasket);
 
+        System.out.println(stockList);
+
         sellItem(rBasket, "car", 1);
         System.out.println(rBasket);
 
@@ -60,6 +64,16 @@ public class Main {
         System.out.println(rBasket);
 
         System.out.println(stockList);
+
+//        temp = new StockItem("pen", 1.12);
+//        stockList.Items().put(temp.getName(), temp);
+        stockList.Items().get("car").adjustStock(2000);
+        stockList.get("car").adjustStock(-1000);
+        System.out.println(stockList);
+
+        for (Map.Entry<String, Double> price : stockList.PriceList().entrySet()) {
+            System.out.println(price.getKey() + " costs " + price.getValue());
+        }
     }
 
     public static int sellItem(Basket basket, String item, int quantity) {
@@ -75,6 +89,7 @@ public class Main {
             return quantity;
         }
 
+        System.out.println("There are no items " + item + " in stock.");
         return 0;
     }
 }

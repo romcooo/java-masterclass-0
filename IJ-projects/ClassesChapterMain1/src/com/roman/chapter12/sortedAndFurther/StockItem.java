@@ -4,17 +4,20 @@ public class StockItem implements Comparable<StockItem> {
     private final String name;
     private double price;
     private int quantityStock;
+    private int quantityReservable;
 
     public StockItem(String name, double price) {
         this.name = name;
         this.price = price;
         this.quantityStock = 0;
+        this.quantityReservable = 0;
     }
 
     public StockItem(String name, double price, int quantityStock) {
         this.name = name;
         this.price = price;
         this.quantityStock = quantityStock;
+        this.quantityReservable = quantityStock;
     }
 
     public String getName() {
@@ -29,6 +32,10 @@ public class StockItem implements Comparable<StockItem> {
         return quantityStock;
     }
 
+    public int quantityReservable( ){
+        return quantityReservable;
+    }
+
     public void setPrice(double price) {
         if (price > 0.0d) {
             this.price = price;
@@ -41,8 +48,18 @@ public class StockItem implements Comparable<StockItem> {
         int newQuantity = this.quantityStock + quantity;
         if (newQuantity >= 0) {
             this.quantityStock = newQuantity;
+            this.quantityReservable = newQuantity;
         } else {
             System.out.println("Operation would result in a quantity lower than 0.");
+        }
+    }
+
+    public void adjustReservedStock(int quantity) {
+        int newReservableQuantity = this.quantityReservable - quantity;
+        if (newReservableQuantity >= 0 && newReservableQuantity <= this.quantityStock) {
+            this.quantityReservable = newReservableQuantity;
+        } else {
+            System.out.println("Cannot adjust reserved stock below 0 or actual stock is lower than desired reservation.");
         }
     }
 
@@ -68,7 +85,7 @@ public class StockItem implements Comparable<StockItem> {
 
     @Override
     public int compareTo(StockItem o) {
-        System.out.println("Entering stockItem.compareTo()");
+//        System.out.println("Entering stockItem.compareTo()");
         if (this == o) {
             return 0;
         }
