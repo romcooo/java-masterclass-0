@@ -144,8 +144,7 @@ public class MainChallenge {
         }
 
         if(stockList.sellStock(item, quantity) != 0) {
-            basket.addToBasket(stockItem, quantity);
-            return quantity;
+            return (basket.addToBasket(stockItem, quantity));
         }
 
         System.out.println("There are no items " + item + " in stock.");
