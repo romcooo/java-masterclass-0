@@ -36,14 +36,6 @@ public class StockItem implements Comparable<StockItem> {
         return quantityReservable;
     }
 
-    public void setPrice(double price) {
-        if (price > 0.0d) {
-            this.price = price;
-        } else {
-            System.out.println("Price has to be greater than 0.");
-        }
-    }
-
     public void adjustStock(int quantity) {
         int newQuantity = this.quantityStock + quantity;
         if (newQuantity >= 0) {
