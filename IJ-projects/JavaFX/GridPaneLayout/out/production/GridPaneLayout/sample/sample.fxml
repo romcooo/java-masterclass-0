@@ -6,6 +6,22 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.control.Label?>
 <BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="sample.Controller">
+
+    <top>
+        <Label text="This label is in the top position"
+               alignment="CENTER"
+               style="-fx-border-color: blue; -fx-border-width: 3; -fx-border-style: dashed"
+               BorderPane.alignment="CENTER"/>
+    </top>
+
+    <left>
+        <Label text="This label is in the left position" alignment="CENTER"/>
+    </left>
+
+    <right>
+        <Label text="This label is in the right position" alignment="CENTER"/>
+    </right>
+
     <bottom>
         <HBox spacing="10" alignment="TOP_RIGHT">
             <padding>
@@ -29,8 +45,7 @@
         </HBox>
     </bottom>
 
-    <top>
-        <Label text="This label is in the top position" alignment="CENTER" style="-fx-border-color: blue; -fx-border-width: 3; -fx-border-style: dashed" BorderPane.alignment="CENTER"/>
-    </top>
+
+
 
 </BorderPane>
