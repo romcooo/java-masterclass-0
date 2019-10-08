@@ -5,8 +5,17 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.HBox?>
 <GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+          xmlns:fx="http://javafx.com/fxml"
+          alignment="center"
+          hgap="10" vgap="10">
 
     <Button GridPane.rowIndex="0" GridPane.columnIndex="0" text="Button">
         <graphic>
@@ -16,11 +25,37 @@
         </graphic>
     </Button>
 
-    <Label GridPane.rowIndex="0" GridPane.columnIndex="1" text="Label">
+    <Label GridPane.rowIndex="0" GridPane.columnIndex="1" text="Label"
+        textFill="blue" wrapText="true">
+        <font>
+            <Font name="Arial italic" size="12"/>
+        </font>
         <graphic>
             <ImageView>
                 <Image url="@/toolbarButtonGraphics/general/Information24.gif"/>
             </ImageView>
         </graphic>
     </Label>
+
+    <fx:define>
+        <ToggleGroup fx:id="colorToggleGroup"/>
+    </fx:define>
+
+    <RadioButton GridPane.rowIndex="0" GridPane.columnIndex="2" text="Red" toggleGroup="$colorToggleGroup"/>
+    <RadioButton GridPane.rowIndex="0" GridPane.columnIndex="3" text="Blue" toggleGroup="$colorToggleGroup" selected="true"/>
+    <RadioButton GridPane.rowIndex="0" GridPane.columnIndex="4" text="Green" toggleGroup="$colorToggleGroup"/>
+
+    <VBox GridPane.rowIndex="0" GridPane.columnIndex="5">
+        <CheckBox text="subscribe" indeterminate="true"/>
+        <CheckBox text="2"/>
+        <CheckBox text="3"/>
+        <CheckBox text="4"/>
+    </VBox>
+    <HBox GridPane.rowIndex="0" GridPane.columnIndex="6">
+        <ToggleButton text="toggle me"/>
+        <ToggleButton text="2"/>
+        <ToggleButton text="3"/>
+    </HBox>
+
+
 </GridPane>
