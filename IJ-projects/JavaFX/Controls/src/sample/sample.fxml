@@ -12,6 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
 <GridPane fx:controller="sample.Controller"
           xmlns:fx="http://javafx.com/fxml"
           alignment="center"
@@ -41,21 +42,23 @@
         <ToggleGroup fx:id="colorToggleGroup"/>
     </fx:define>
 
-    <RadioButton GridPane.rowIndex="0" GridPane.columnIndex="2" text="Red" toggleGroup="$colorToggleGroup"/>
-    <RadioButton GridPane.rowIndex="0" GridPane.columnIndex="3" text="Blue" toggleGroup="$colorToggleGroup" selected="true"/>
-    <RadioButton GridPane.rowIndex="0" GridPane.columnIndex="4" text="Green" toggleGroup="$colorToggleGroup"/>
+    <VBox GridPane.rowIndex="0" GridPane.columnIndex="2">
+        <RadioButton text="Red" toggleGroup="$colorToggleGroup"/>
+        <RadioButton text="Blue" toggleGroup="$colorToggleGroup" selected="true"/>
+        <RadioButton text="Green" toggleGroup="$colorToggleGroup"/>
+    </VBox>
 
-    <VBox GridPane.rowIndex="0" GridPane.columnIndex="5">
+    <VBox GridPane.rowIndex="0" GridPane.columnIndex="3">
         <CheckBox text="subscribe" indeterminate="true"/>
         <CheckBox text="2"/>
         <CheckBox text="3"/>
         <CheckBox text="4"/>
     </VBox>
-    <HBox GridPane.rowIndex="0" GridPane.columnIndex="6">
+    <HBox GridPane.rowIndex="0" GridPane.columnIndex="4">
         <ToggleButton text="toggle me"/>
         <ToggleButton text="2"/>
         <ToggleButton text="3"/>
     </HBox>
-
+    <TextField GridPane.rowIndex="1" GridPane.columnIndex="0"/>
 
 </GridPane>
