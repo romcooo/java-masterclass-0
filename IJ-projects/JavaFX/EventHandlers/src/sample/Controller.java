@@ -16,6 +16,8 @@ public class Controller {
     @FXML private CheckBox checkBox1;
     @FXML private Label label1;
 
+    private CheckBox ourCheckBoxp;
+
     @FXML
     public void initialize() {
         helloButton.setDisable(true);
