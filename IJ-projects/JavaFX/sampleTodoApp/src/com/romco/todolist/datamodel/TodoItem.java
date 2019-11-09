@@ -35,4 +35,9 @@ public class TodoItem {
     public void setDueDate(LocalDate dueDate) {
         this.dueDate = dueDate;
     }
+
+    @Override
+    public String toString() {
+        return this.description;
+    }
 }
