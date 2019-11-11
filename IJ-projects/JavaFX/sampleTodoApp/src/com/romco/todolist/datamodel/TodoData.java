@@ -52,6 +52,7 @@ public class TodoData {
                     String dateString = itemPieces[2];
                     LocalDate date = LocalDate.parse(dateString, formatter);
                     TodoItem todoItem = new TodoItem(description, details, date);
+                    todoItems.add(todoItem);
                 }
             }
         } finally {
@@ -61,7 +62,7 @@ public class TodoData {
         }
     }
 
-    public void storeTodoItems() throws IOException {
+    public void storeTodoItems(List<TodoItem> todoItems) throws IOException {
         Path path = Paths.get(filename);
         BufferedWriter bw = Files.newBufferedWriter(path);
         try {
@@ -73,12 +74,14 @@ public class TodoData {
                         item.getDescription(),
                         item.getDetails(),
                         item.getDueDate().format(formatter)));
+                bw.newLine();
             }
         } finally {
             if (bw != null) {
                 bw.close();
             }
         }
+
     }
 
 }

@@ -1,5 +1,6 @@
 package com.romco.todolist;
 
+import com.romco.todolist.datamodel.TodoData;
 import com.romco.todolist.datamodel.TodoItem;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -8,8 +9,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TextArea;
-import javafx.scene.text.Text;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.format.DateTimeFormatter;
@@ -57,6 +58,14 @@ public class Controller {
         todoListView.getItems().setAll(todoItems);
         todoListView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
         todoListView.getSelectionModel().selectFirst();
+    }
+
+    public void saveData() {
+        try {
+            TodoData.getInstance().storeTodoItems(todoListView.getItems());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }
