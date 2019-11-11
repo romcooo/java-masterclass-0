@@ -36,8 +36,8 @@ public class TodoItem {
         this.dueDate = dueDate;
     }
 
-    @Override
-    public String toString() {
-        return this.description;
-    }
+//    @Override
+//    public String toString() {
+//        return this.description;
+//    }
 }

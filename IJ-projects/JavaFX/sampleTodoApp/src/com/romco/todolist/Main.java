@@ -33,4 +33,13 @@ public class Main extends Application {
         }
         super.stop();
     }
+
+    @Override
+    public void init() throws Exception {
+        try {
+            TodoData.getInstance().loadTodoItems();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+    }
 }
