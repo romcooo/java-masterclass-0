@@ -2,8 +2,11 @@ package com.romco.todolist;
 
 import com.romco.todolist.datamodel.TodoData;
 import com.romco.todolist.datamodel.TodoItem;
+import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
+import javafx.collections.transformation.FilteredList;
+import javafx.collections.transformation.SortedList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -19,8 +22,10 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Predicate;
 
 public class Controller {
 
@@ -35,11 +40,18 @@ public class Controller {
     private BorderPane mainBorderPane;
     @FXML
     private ContextMenu listContextMenu;
+    @FXML
+    private ToggleButton filterToggleButton;
+
+    private Predicate<TodoItem> wantAllItems, wantDueTodayItems;
+
+    private FilteredList<TodoItem> filteredList;
 
     public void initialize() {
         todoItems = new ArrayList<>();
         listContextMenu = new ContextMenu();
         MenuItem deleteMenuItem = new MenuItem("Delete");
+
         deleteMenuItem.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
@@ -63,8 +75,34 @@ public class Controller {
             }
         });
 
-        todoItems = TodoData.getInstance().getTodoItems();
-        todoListView.setItems(TodoData.getInstance().getTodoItems());
+        wantAllItems = new Predicate<TodoItem>() {
+            @Override
+            public boolean test(TodoItem todoItem) {
+                return true;
+            }
+        };
+
+        wantDueTodayItems = new Predicate<TodoItem>() {
+            @Override
+            public boolean test(TodoItem todoItem) {
+                return (todoItem.getDueDate().isEqual(LocalDate.now()));
+            }
+        };
+
+        filteredList = new FilteredList<>(TodoData.getInstance().getTodoItems(), wantAllItems);
+
+        SortedList<TodoItem> sortedTodoItems = new SortedList<TodoItem>(filteredList,
+                new Comparator<TodoItem>() {
+                    @Override
+                    public int compare(TodoItem o1, TodoItem o2) {
+                        if (o1.getDueDate() == null || o2.getDueDate() == null) {
+                            return 0;
+                        }
+                        return o1.getDueDate().compareTo(o2.getDueDate());
+                    }
+                });
+
+        todoListView.setItems(sortedTodoItems);
         todoListView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
         todoListView.getSelectionModel().selectFirst();
 
@@ -133,6 +171,8 @@ public class Controller {
         } else {
             System.out.println("Cancel pressed.");
         }
+
+
     }
 
     @FXML
@@ -168,7 +208,35 @@ public class Controller {
         Optional<ButtonType> result = alert.showAndWait();
         if(result.isPresent() && result.get() == ButtonType.OK) {
             TodoData.getInstance().deleteTodoItem(itemToDelete);
+            if(filteredList.isEmpty()){
+                textAreaCenter1.clear();
+            }
         }
+    }
+
+    @FXML
+    public void handleFilterButton() {
+        TodoItem initiallySelectedItem = todoListView.getSelectionModel().getSelectedItem();
+        if (filterToggleButton.isSelected()) {
+            filteredList.setPredicate(wantDueTodayItems);
+            if(filteredList.isEmpty()) {
+                textAreaCenter1.clear();
+            } else {
+                if (filteredList.contains(initiallySelectedItem)) {
+                    todoListView.getSelectionModel().select(initiallySelectedItem);
+                } else {
+                    todoListView.getSelectionModel().select(0);
+                }
+            }
+        } else {
+            filteredList.setPredicate(wantAllItems);
+            todoListView.getSelectionModel().select(initiallySelectedItem);
+        }
+    }
+
+    @FXML
+    public void handleExit() {
+        Platform.exit();
     }
 
 }
