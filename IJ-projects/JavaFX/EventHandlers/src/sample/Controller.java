@@ -12,7 +12,7 @@ public class Controller {
     @FXML
     private Button helloButton, byeButton;
 
-    private CheckBox ourCheckBoxp;
+    private CheckBox ourCheckBox;
 
     @FXML
     public void initialize() {
