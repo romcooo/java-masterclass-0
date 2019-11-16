@@ -1,4 +1,4 @@
-package com.romco;
+package com.romco.exceptions;
 
 import java.util.Scanner;
 
