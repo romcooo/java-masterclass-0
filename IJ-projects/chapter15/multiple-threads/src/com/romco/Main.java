@@ -34,8 +34,10 @@ class Countdown {
                 break;
         }
 
-        for (this.i = 10; this.i > 0; this.i--) {
-            System.out.println(colour + Thread.currentThread().getName() + ": i = " + this.i);
+        synchronized(this) {
+            for (this.i = 10; this.i > 0; this.i--) {
+                System.out.println(colour + Thread.currentThread().getName() + ": i = " + this.i);
+            }
         }
     }
 }
