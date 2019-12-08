@@ -1,5 +1,9 @@
 package com.romcooo;
 
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -30,20 +34,52 @@ public class Main {
 class BankAccount {
     private double balance;
     private String accountNumber;
+    private Lock lock;
 
     public BankAccount(double balance, String accountNumber) {
         this.balance = balance;
         this.accountNumber = accountNumber;
+        this.lock = new ReentrantLock();
     }
 
-    public synchronized void deposit ( double amount){
-        balance += amount;
-        System.out.println("Deposit of " + amount + ", remainder: " + this.balance);
+    public void deposit ( double amount) {
+        try {
+            if (this.lock.tryLock(1000, TimeUnit.MILLISECONDS)) {
+                try {
+                    balance += amount;
+                    System.out.println("Deposit of " + amount + ", remainder: " + this.balance);
+                } finally {
+                    this.lock.unlock();
+                }
+            }
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
+
+
     }
 
-    public synchronized void withdraw(double amount) {
+    public void withdraw(double amount) {
         // could be sync'd here using synchronized(this) {...}
-        balance -= amount;
-        System.out.println("Withdrawal of " + amount + ", remainder: " + this.balance);
+        try {
+            if (this.lock.tryLock(1000, TimeUnit.MILLISECONDS)) {
+                try {
+                    balance -= amount;
+                    System.out.println("Withdrawal of " + amount + ", remainder: " + this.balance);
+                } finally {
+                    this.lock.unlock();
+                }
+            }
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    public String getAccountNumber() {
+        return this.accountNumber;
+    }
+
+    public void printAccountNumber() {
+        System.out.println("Account number = " + this.accountNumber);
     }
 }
