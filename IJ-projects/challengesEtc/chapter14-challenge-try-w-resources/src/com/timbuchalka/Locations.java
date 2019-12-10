@@ -46,7 +46,7 @@ public class Locations implements Map<Integer, Location> {
                 String description = locFile.readUTF();
                 int numExits = locFile.readInt();
                 System.out.println("Read location: " + locID + ", description: " + description);
-                System.out.println("Found " + numExits + " exits");
+                System.out.println("Found " + numExits + " exits");git push
                 for (int i = 0; i < numExits; i++) {
                     String direction = locFile.readUTF();
                     int destination = locFile.readInt();
