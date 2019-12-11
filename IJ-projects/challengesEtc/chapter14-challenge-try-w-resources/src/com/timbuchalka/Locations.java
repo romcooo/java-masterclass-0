@@ -10,6 +10,13 @@ public class Locations implements Map<Integer, Location> {
     private static Map<Integer, Location> locations = new HashMap<Integer, Location>();
 
     public static void main(String[] args) throws IOException {
+
+        try(ObjectOutputStream locFile = new ObjectOutputStream((new BufferedOutputStream(new FileOutputStream("locations.dat"))))) {
+            for (Location location : locations.values()) {
+                locFile.writeObject(location);
+            }
+        }
+
 //        try(DataOutputStream locFile = new DataOutputStream(new BufferedOutputStream(new FileOutputStream("locations.dat")))) {
 //            for (Location location : locations.values()) {
 //                locFile.writeInt(location.getLocationID());
@@ -27,11 +34,6 @@ public class Locations implements Map<Integer, Location> {
 //            }
 //        }
 
-        try(ObjectOutputStream locFile = new ObjectOutputStream((new BufferedOutputStream(new FileOutputStream("locations.dat"))))) {
-            for (Location location : locations.values()) {
-                locFile.writeObject(location);
-            }
-        }
 
 //        try(BufferedWriter locWriter = new BufferedWriter(new FileWriter("locations.txt"));
 //            BufferedWriter dirWriter1 = new BufferedWriter(new FileWriter("directions.txt"))) {
@@ -45,6 +47,29 @@ public class Locations implements Map<Integer, Location> {
     }
 
     static {
+        try (ObjectInputStream locFile = new ObjectInputStream(new BufferedInputStream(new FileInputStream("locations.dat")))) {
+            boolean eof = false;
+            while (!eof) {
+                try {
+                    Location location = (Location) locFile.readObject();
+                    System.out.println("Read location " + location.getLocationID() + " : " + location.getDescription());
+                    System.out.println("Found " + location.getExits().size() + " exits");
+
+                    locations.put(location.getLocationID(), location);
+                } catch (EOFException ex) {
+                    eof = true;
+                }
+
+            }
+        } catch(InvalidClassException c) {
+            System.out.println("Invalid class exception " + c.getMessage());
+        } catch (IOException io) {
+            io.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            System.out.println("ClassNotFoundException " + e.getMessage());
+            e.printStackTrace();
+        }
+
 //        try (DataInputStream locFile = new DataInputStream(new BufferedInputStream(new FileInputStream("locations.dat")))) {
 //            boolean eof = false;
 //            while(!eof) {
@@ -69,21 +94,6 @@ public class Locations implements Map<Integer, Location> {
 //        } catch (IOException e) {
 //            e.printStackTrace();
 //        }
-
-        try (ObjectInputStream locFile = new ObjectInputStream(new BufferedInputStream(new FileInputStream("locations.dat")))) {
-            boolean eof = false;
-            while(!eof) {
-
-                Location location = (Location) locFile.readObject();
-                System.out.println("Read location " + location.getLocationID() + " : " + location.getDescription());
-                System.out.println("Found " + location.getExits().size() + " exits");
-
-                locations.put(location.getLocationID(), location);
-            }
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
 //        try(BufferedReader bufferedReader = new BufferedReader(new FileReader("locations_big.txt"))) {
 //            String input;
