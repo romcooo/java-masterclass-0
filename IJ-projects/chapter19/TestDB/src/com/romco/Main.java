@@ -3,13 +3,16 @@ package com.romco;
 import java.sql.*;
 
 public class Main {
-    public static final String CONNECTION_STRING = "jdbc:sqlite:I:\\Git\\java-masterclass-0\\IJ-projects\\chapter19\\TestDB\\mydb\\testjava.db";
+//    public static final String CONNECTION_STRING = "jdbc:sqlite:I:\\Git\\java-masterclass-0\\IJ-projects\\chapter19\\TestDB\\mydb\\testjava.db";
+    public static final String CONNECTION_STRING = "jdbc:sqlite:C:\\Users\\roman.stubna\\OneDrive - Home Credit International a.s\\Personal\\git\\Java_masterclass\\IJ-projects\\chapter19\\TestDB\\mydb\\testjava.db";
     public static final String DB_NAME = "testjava.db";
     public static final String TABLE_CONTACTS = "contacts";
 
     public static final String COLUMN_NAME = "name";
     public static final String COLUMN_PHONE = "phone";
     public static final String COLUMN_EMAIL = "email";
+    public static final String SPACE = " ";
+    public static final String CSPACE = ", ";
 
 
     public static void main(String[] args) {
@@ -21,7 +24,9 @@ public class Main {
 
             statement.execute("DROP TABLE IF EXISTS " + TABLE_CONTACTS);
 
-            statement.execute("CREATE TABLE IF NOT EXISTS " + TABLE_CONTACTS);
+            statement.execute("CREATE TABLE IF NOT EXISTS " + TABLE_CONTACTS + "( " + COLUMN_NAME + " text, " + COLUMN_PHONE + " integer, " + COLUMN_EMAIL + " text)");
+            
+            statement.execute("INSERT INTO " + TABLE_CONTACTS + SPACE + )
 //            con.setAutoCommit(false);
 //            statement.execute("CREATE TABLE IF NOT EXISTS contacts " +
 //                    "(name TEXT, phone INTEGER, email TEXT)");
