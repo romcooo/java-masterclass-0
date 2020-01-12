@@ -2,6 +2,9 @@
   <artifact type="jar" name="PopUp:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/PopUp_jar</output-path>
     <root id="archive" name="PopUp.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/PopUp_jar/META-INF/MANIFEST.MF" />
+      </element>
       <element id="module-output" name="PopUp" />
       <element id="extracted-dir" path="$USER_HOME$/Documents/lib/javafx-sdk-11.0.2/lib/javafx-swt.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$USER_HOME$/Documents/lib/javafx-sdk-11.0.2/lib/javafx.base.jar" path-in-jar="/" />
