@@ -9,5 +9,9 @@
         <module name="core" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="core" target="11" />
+      <module name="guess-the-number-game" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
