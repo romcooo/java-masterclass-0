@@ -7,9 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="core" />
+        <module name="console" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="console" target="11" />
       <module name="core" target="11" />
       <module name="guess-the-number-game" target="11" />
     </bytecodeTargetLevel>

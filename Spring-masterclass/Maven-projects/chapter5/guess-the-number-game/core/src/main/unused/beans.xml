@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--    <context:annotation-config/>-->
+<!--    above is implicit from: -->
+    <context:component-scan base-package="com.romco"/>
+
+<!--    <bean id="..." class="...">-->
+<!--        &lt;!&ndash; collaborators and configuration for this bean go here &ndash;&gt;-->
+<!--    </bean>-->
+
+<!--    <bean id="..." class="...">-->
+<!--        &lt;!&ndash; collaborators and configuration for this bean go here &ndash;&gt;-->
+<!--    </bean>-->
+
+<!--    &lt;!&ndash; more bean definitions go here &ndash;&gt;-->
+<!--    <bean id="numberGenerator" class="com.romco.NumberGeneratorImpl"/>-->
+<!--    <bean id="game" class="com.romco.GameImpl">-->
+<!--        &lt;!&ndash;    removed below because context:annotation-config tag automatically uses it &ndash;&gt;-->
+<!--        &lt;!&ndash;        <property name="numberGenerator" ref="numberGenerator"/>&ndash;&gt;-->
+<!--    </bean>-->
+
+<!--    removed below because context:annotation-config tag automatically uses it -->
+<!--    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>-->
+
+</beans>
+
