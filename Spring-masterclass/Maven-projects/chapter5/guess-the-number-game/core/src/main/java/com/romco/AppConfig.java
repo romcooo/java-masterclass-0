@@ -5,7 +5,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-//@ComponentScan(basePackages = "com.romco") //if not specified, base package of this class is used
+@ComponentScan(basePackages = "com.romco") //if not specified, base package of this class is used
 public class AppConfig {
     
     //== bean methods ==
@@ -19,7 +19,8 @@ public class AppConfig {
         return new GameImpl();
     }
     
-    @Bean MessageGenerator messageGenerator() {
+    @Bean
+    public MessageGenerator messageGenerator() {
         return new MessageGeneratorImpl();
     }
 }

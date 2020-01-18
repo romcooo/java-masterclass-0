@@ -6,6 +6,7 @@
     </appender>
 
     <logger name="com.romco" level="DEBUG"/>
+<!--    <logger name="com.romco.console" level="TRACE"/>-->
     <logger name="org.springframework" level="TRACE"/>
 
     <root level="DEBUG">
