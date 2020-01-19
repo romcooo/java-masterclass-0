@@ -1,6 +1,6 @@
 package com.romco.console;
 
-import com.romco.AppConfig;
+import com.romco.config.AppConfig;
 import com.romco.Game;
 import com.romco.MessageGenerator;
 import com.romco.NumberGenerator;

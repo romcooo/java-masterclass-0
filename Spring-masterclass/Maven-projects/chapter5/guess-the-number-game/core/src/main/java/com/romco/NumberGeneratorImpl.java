@@ -1,5 +1,7 @@
 package com.romco;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.util.Random;
 
 //@Component
@@ -7,7 +9,10 @@ public class NumberGeneratorImpl implements NumberGenerator {
     
     // == fields ==
     private final Random random = new Random();
-    private int maxNumber = 1023;
+
+    @Autowired
+    @MaxNumber
+    private int maxNumber;
     
     // == public methods ==
     @Override
