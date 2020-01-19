@@ -4,8 +4,10 @@ import com.romco.GuessCount;
 import com.romco.MaxNumber;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 
 @Configuration
+@PropertySource("classpath:config/game.properties")
 public class GameConfig {
 
     // == fields ==
