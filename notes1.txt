@@ -9,6 +9,7 @@
 	- java automatically assumes that decimals are doubles (float myFloat = 5.4 -> error (5.4 is a double)
 	- double is faster than float on modern machines + math functions use it more often -> use doubles instead of floats for calculations.
 	- assign unicode characters to char: char myChar = '\u00A9';
+	- BigDecimal is better for precision operations with floating point
 		
 -----2 OPERATORS
 	- % = mod
