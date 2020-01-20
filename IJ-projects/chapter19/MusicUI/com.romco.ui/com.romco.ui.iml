@@ -8,5 +8,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="javafx-swt" level="application" />
+    <orderEntry type="module" module-name="com.romco.db" />
+    <orderEntry type="module" module-name="com.romco.common" />
   </component>
 </module>

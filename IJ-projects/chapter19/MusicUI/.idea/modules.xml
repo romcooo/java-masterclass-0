@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MusicUI.iml" filepath="$PROJECT_DIR$/MusicUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.romco.common/com.romco.common.iml" filepath="$PROJECT_DIR$/com.romco.common/com.romco.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.romco.db/com.romco.db.iml" filepath="$PROJECT_DIR$/com.romco.db/com.romco.db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.romco.ui/com.romco.ui.iml" filepath="$PROJECT_DIR$/com.romco.ui/com.romco.ui.iml" />
     </modules>
   </component>
 </project>
