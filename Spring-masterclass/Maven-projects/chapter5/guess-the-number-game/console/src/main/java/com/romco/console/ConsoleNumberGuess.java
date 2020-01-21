@@ -25,6 +25,14 @@ public class ConsoleNumberGuess {
     @Autowired
     private MessageGenerator messageGenerator;
 
+    // == constructors ==
+    @Autowired
+    public ConsoleNumberGuess(Game game, MessageGenerator messageGenerator) {
+        this.game = game;
+        this.messageGenerator = messageGenerator;
+    }
+    
+    
     // == events ==
 
 //    @Override

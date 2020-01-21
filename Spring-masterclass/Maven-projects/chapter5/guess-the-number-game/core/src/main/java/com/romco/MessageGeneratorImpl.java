@@ -3,25 +3,33 @@ package com.romco;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 
+@Component
 public class MessageGeneratorImpl implements MessageGenerator {
     
-    //== constants ==
+    // == constants ==
     private static Logger logger = LoggerFactory.getLogger(MessageGeneratorImpl.class);
     
-    //== fields ==
-    @Autowired
+    // == fields ==
+//    @Autowired
     private Game game;
     
-    //==
+    // == constructors
+    @Autowired
+    public MessageGeneratorImpl(Game game) {
+        this.game = game;
+    }
+    
+    //== private methods
     @PostConstruct
     private void init() {
         logger.info("value of game: {}", game.getNumber());
     }
     
-    //== public methods
+    // == public methods
     @Override
     public String getMainMessage() {
         return "Number is between " + game.getSmallest() + " and " + game.getBiggest() + ". Can you guess it?";

@@ -3,11 +3,12 @@ package com.romco;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-//@Component
+@Component
 public class GameImpl implements Game {
 
     //== constants==
@@ -26,10 +27,11 @@ public class GameImpl implements Game {
             remainingGuesses;
     private boolean validNumberRange = true;
 
-    //== constructors ==
-//    public GameImpl(NumberGenerator numberGenerator) {
-//        this.numberGenerator = numberGenerator;
-//    }
+    // == constructors ==
+    @Autowired
+    public GameImpl(NumberGenerator numberGenerator) {
+        this.numberGenerator = numberGenerator;
+    }
     
     //== initialization methods==
     @PostConstruct

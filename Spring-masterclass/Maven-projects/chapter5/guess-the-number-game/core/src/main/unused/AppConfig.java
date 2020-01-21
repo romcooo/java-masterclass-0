@@ -10,20 +10,20 @@ import org.springframework.context.annotation.Import;
 @Import(GameConfig.class)
 @ComponentScan(basePackages = "com.romco") //if not specified, base package of this class is used
 public class AppConfig {
-    
+
     //== bean methods ==
-    @Bean
-    public NumberGenerator numberGenerator() {
-        return new NumberGeneratorImpl();
-    }
-    
-    @Bean
-    public Game game() {
-        return new GameImpl();
-    }
-    
-    @Bean
-    public MessageGenerator messageGenerator() {
-        return new MessageGeneratorImpl();
-    }
+//    @Bean
+//    public NumberGenerator numberGenerator() {
+//        return new NumberGeneratorImpl();
+//    }
+
+//    @Bean
+//    public Game game() {
+//        return new GameImpl();
+//    }
+//
+//    @Bean
+//    public MessageGenerator messageGenerator() {
+//        return new MessageGeneratorImpl();
+//    }
 }
