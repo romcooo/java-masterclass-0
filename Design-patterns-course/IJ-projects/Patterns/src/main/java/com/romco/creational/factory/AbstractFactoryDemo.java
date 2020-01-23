@@ -1,8 +1,7 @@
-package com.romco.factory;
+package com.romco.creational.factory;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;

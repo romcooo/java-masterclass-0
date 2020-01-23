@@ -1,21 +1,17 @@
 package com.romco;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 
+@Slf4j
 @Component
 public class MessageGeneratorImpl implements MessageGenerator {
     
-    // == constants ==
-    private static Logger logger = LoggerFactory.getLogger(MessageGeneratorImpl.class);
-    
     // == fields ==
-//    @Autowired
-    private Game game;
+    private final Game game;
     
     // == constructors
     @Autowired
@@ -26,7 +22,7 @@ public class MessageGeneratorImpl implements MessageGenerator {
     //== private methods
     @PostConstruct
     private void init() {
-        logger.info("value of game: {}", game.getNumber());
+        log.info("value of game: {}", game.getNumber());
     }
     
     // == public methods

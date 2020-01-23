@@ -1,5 +1,6 @@
 package com.romco;
 
+import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -9,13 +10,12 @@ import java.util.Random;
 public class NumberGeneratorImpl implements NumberGenerator {
     
     // == fields ==
+    // No getter here
     private final Random random = new Random();
-
-//    @Autowired
-//    @MaxNumber
+    
+    @Getter
     private final int maxNumber;
-//    @Autowired
-//    @MinNumber
+    @Getter
     private final int minNumber;
     
     // == constructors ==
@@ -32,13 +32,4 @@ public class NumberGeneratorImpl implements NumberGenerator {
         return minNumber + random.nextInt(maxNumber - minNumber);
     }
     
-    @Override
-    public int getMaxNumber() {
-        return maxNumber;
-    }
-    
-    @Override
-    public int getMinNumber() {
-        return minNumber;
-    }
 }

@@ -1,4 +1,4 @@
-package com.romco.observer;
+package com.romco.creational.observer;
 
 import java.util.HashMap;
 import java.util.Map;

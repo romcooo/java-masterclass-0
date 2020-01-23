@@ -1,4 +1,4 @@
-package com.romco.factory;
+package com.romco.creational.factory;
 
 enum CoordinateSystem {
     CARTESIAN, POLAR;

@@ -1,6 +1,4 @@
-package com.romco.singleton;
-
-import org.w3c.dom.ls.LSException;
+package com.romco.creational.singleton;
 
 class LazySingleton {
     private volatile static LazySingleton instance;

@@ -1,4 +1,4 @@
-package com.romco.builder.facetedBuilder;
+package com.romco.creational.builder.facetedBuilder;
 
 class Person {
     public String streetAddress, postcode, city;

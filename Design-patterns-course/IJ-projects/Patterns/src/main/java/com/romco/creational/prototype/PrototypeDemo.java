@@ -1,4 +1,4 @@
-package com.romco.prototype;
+package com.romco.creational.prototype;
 
 import org.apache.commons.lang3.SerializationUtils;
 

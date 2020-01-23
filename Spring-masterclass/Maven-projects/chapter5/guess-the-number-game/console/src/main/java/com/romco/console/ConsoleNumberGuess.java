@@ -2,6 +2,8 @@ package com.romco.console;
 
 import com.romco.Game;
 import com.romco.MessageGenerator;
+import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,19 +13,13 @@ import org.springframework.stereotype.Component;
 
 import java.util.Scanner;
 
+@Slf4j
 @Component
 public class ConsoleNumberGuess {
-//        implements ApplicationListener<ContextRefreshedEvent> -> in this case, @Override would be valid below
-
-    // == constants ==
-    private static final Logger log = LoggerFactory.getLogger(ConsoleNumberGuess.class);
 
     // == fields ==
-    @Autowired
-    private Game game;
-
-    @Autowired
-    private MessageGenerator messageGenerator;
+    private final Game game;
+    private final MessageGenerator messageGenerator;
 
     // == constructors ==
     @Autowired
@@ -32,18 +28,7 @@ public class ConsoleNumberGuess {
         this.messageGenerator = messageGenerator;
     }
     
-    
     // == events ==
-
-//    @Override
-//    public void onApplicationEvent(ContextRefreshedEvent event) {
-//        log.info("Container ready for use.");
-//    }
-
-//    @EventListener
-//    public void start(ContextRefreshedEvent event) {
-//        log.info("start() -> Container ready for use.");
-//    }
 
     @EventListener(ContextRefreshedEvent.class) // here, we're providing the type of event which we are interested in
     // this is an alternative to having the specific event as the argument to the method (above), and the better practice

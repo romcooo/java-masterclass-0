@@ -1,4 +1,4 @@
-package com.romco.singleton;
+package com.romco.creational.singleton;
 
 import java.io.File;
 
