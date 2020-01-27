@@ -5,11 +5,11 @@
         </encoder>
     </appender>
 
-    <logger name="com.romco" level="DEBUG"/>
+    <logger name="com.romco" level="TRACE"/>
 <!--    <logger name="com.romco.console" level="TRACE"/>-->
     <logger name="org.springframework" level="TRACE"/>
 
-    <root level="DEBUG">
+    <root level="INFO">
         <appender-ref ref="STDOUT"/>
     </root>
 </configuration>
