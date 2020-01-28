@@ -11,6 +11,7 @@
 
     <!-- properties -->
     <properties>
+        <jstl.version>1.2</jstl.version>
         <spring.version>5.2.3.RELEASE</spring.version>
         <lombok.version>1.18.10</lombok.version>
         <logback.version>1.2.3</logback.version>
@@ -19,6 +20,7 @@
         <maven.version>3.8.1</maven.version>
         <war.version>3.2.3</war.version>
         <servlet-api.version>4.0.1</servlet-api.version>
+
     </properties>
 
     <dependencies>
