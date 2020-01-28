@@ -1,0 +1,12 @@
+com\romco\controller\TodoItemController.class
+com\romco\model\TodoItem.class
+com\romco\service\DemoService.class
+com\romco\service\TodoItemService.class
+com\romco\util\ViewNames.class
+com\romco\config\WebConfig.class
+com\romco\service\DemoServiceImpl.class
+com\romco\util\Mappings.class
+com\romco\config\WebAppInitializer.class
+com\romco\model\TodoData.class
+com\romco\controller\DemoController.class
+com\romco\service\TodoItemServiceImpl.class

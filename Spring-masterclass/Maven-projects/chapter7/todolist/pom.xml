@@ -18,6 +18,7 @@
          <maven.version>3.8.1</maven.version>
          <war.version>3.2.3</war.version>
          <servlet-api.version>4.0.1</servlet-api.version>
+         <jstl.version>1.2</jstl.version>
 
          <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
      </properties>
@@ -63,6 +64,12 @@
             <artifactId>javax.servlet-api</artifactId>
             <version>${servlet-api.version}</version>
             <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>${jstl.version}</version>
         </dependency>
     </dependencies>
 
