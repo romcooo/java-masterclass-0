@@ -20,6 +20,7 @@
         <maven.version>3.8.1</maven.version>
         <war.version>3.2.3</war.version>
         <servlet-api.version>4.0.1</servlet-api.version>
+
     </properties>
 
     <dependencies>

@@ -46,7 +46,6 @@ public class DemoController {
     }
 
     // == model attributes ==
-
     @ModelAttribute("welcomeMessage")
     public String welcomeMessage() {
         log.info("welcomeMessage() called");

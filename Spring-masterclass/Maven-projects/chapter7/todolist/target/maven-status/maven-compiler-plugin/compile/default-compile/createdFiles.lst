@@ -9,4 +9,5 @@ com\romco\util\Mappings.class
 com\romco\config\WebAppInitializer.class
 com\romco\model\TodoData.class
 com\romco\controller\DemoController.class
+com\romco\util\AttributeNames.class
 com\romco\service\TodoItemServiceImpl.class
