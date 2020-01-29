@@ -1,10 +1,10 @@
 com\romco\config\GameConfig.class
+com\romco\NumberGenerator.class
+com\romco\MessageGenerator.class
 com\romco\MaxNumber.class
 com\romco\MessageGeneratorImpl.class
 com\romco\GameImpl.class
-com\romco\NumberGenerator.class
 com\romco\GuessCount.class
 com\romco\MinNumber.class
 com\romco\Game.class
-com\romco\MessageGenerator.class
 com\romco\NumberGeneratorImpl.class
