@@ -1,3 +1,8 @@
-com\romco\WebMain.class
 com\romco\util\ViewNames.class
 com\romco\config\WebConfig.class
+com\romco\service\GameService.class
+com\romco\service\GameServiceImpl.class
+com\romco\controller\GameController.class
+com\romco\WebMain.class
+com\romco\util\AttributeNames.class
+com\romco\util\GameMappings.class
