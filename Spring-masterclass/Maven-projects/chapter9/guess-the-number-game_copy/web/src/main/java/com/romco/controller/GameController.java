@@ -49,8 +49,4 @@ public class GameController {
         return GameMappings.REDIRECT_PLAY;
     }
     
-    @GetMapping(GameMappings.HOME)
-    public String home() {
-        return GameMappings.HOME;
-    }
 }
