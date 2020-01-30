@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{fragments/head :: headFragment}">
+<html lang="en">
+<head id="headId">
     <meta charset="UTF-8">
-    <title>Guess the Number Game</title>
+    <title>Game</title>
 </head>
 <body>
     <div align="center">
-        <h1>Guess the Number Game</h1>
-        <h3 th:text="${__${T(com.romco.util.AttributeNames).MAIN_MESSAGE}__}">
+        <h1 id="game-title">Guess the Number Game</h1>
+        <h3 id="main-message">
             Main Message Content
         </h3>
-        <h3 th:text="${__${T(com.romco.util.AttributeNames).RESULT_MESSAGE}__}">
+        <h3 id="result-message">
             Result Message Content
         </h3>
 
-        <form th:action="@{__${T(com.romco.util.GameMappings).PLAY}__}"
+        <form id="game-form"
               action="play"
               method="POST">
-            <label for="guess">Enter your guess</label>
+            <label id="enter-guess" for="guess">Enter your guess</label>
             <input id="guess" type="number" name="guess"/>
-            <input type="submit" value="Submit"/>
+            <input id="submit-button" type="submit" value="Submit"/>
         </form>
-        <footer th:replace="~{fragments/footer :: footerFragment}">
-            <p>Created by Romcoq</p>
+        <footer id="footerId">
+            <p>Created by Romco</p>
         </footer>
     </div>
 </body>
